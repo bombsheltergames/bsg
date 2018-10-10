@@ -1,0 +1,12 @@
+.Main {
+  background-color: #01264f; }
+  .Main-content {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    background: linear-gradient(to bottom, #01264f 80%, #011226);
+    z-index: 2;
+    margin-top: calc(100vh - 41px); }
+    @media screen and (min-width: 768px) {
+      .Main-content {
+        margin-top: calc(100vh - 70px); } }
