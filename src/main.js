@@ -111,9 +111,9 @@ class Main extends Component {
             <Button
               type="ghost"
               size="large"
-              target="_blank"
               rel="noopener noreferrer"
-              href="https://www.indiedb.com/games/depths-of-sanity/downloads/new-demo2"
+              download
+              href="https://bombsheltergamescom.ipage.com/DoS_Demo.zip"
             >
               Download Demo
             </Button>
