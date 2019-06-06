@@ -2,9 +2,8 @@
 import React from "react";
 // Style Imports
 import "styles/layout/header.css";
-// ComponentI Imports
+// Component Imports
 import Logo from "components/logo";
-import NavBar from "layout/navBar";
 
 const Header = props => {
   return (
@@ -12,7 +11,6 @@ const Header = props => {
       <div className="Header-logoWrap">
         <Logo />
       </div>
-      {props.showNav && <NavBar />}
     </header>
   );
 };

@@ -64,6 +64,7 @@ const Footer = props => {
               />
             </svg>
           </a>
+          {/* 
           <a
             href=""
             className="Footer-content-links-youtube"
@@ -82,7 +83,7 @@ const Footer = props => {
                 transform="translate(-8 -34)"
               />
             </svg>
-          </a>
+          </a> */}
         </span>
       </div>
     </footer>
