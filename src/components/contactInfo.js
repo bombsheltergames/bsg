@@ -15,7 +15,11 @@ const ContactInfo = () => {
       <p>
         <strong>Press Inquiries:</strong> press[at]bombsheltergames[dot]com
       </p>
-      <Button type="ghost" href="/dos_press_kit.zip" download>
+      <Button
+        type="ghost"
+        href="https://bombsheltergamescom.ipage.com/DoSPressKit.zip"
+        download
+      >
         Download Press Kit
       </Button>
     </div>

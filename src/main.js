@@ -131,10 +131,10 @@ class Main extends Component {
             <Header />
             <MainSection id="trailer" fadeBg bottomDivider>
               <Video
-                id="T0Z--oChLn0"
+                id="d6eyjCzZdDA"
                 previewImage={dosVidPreview}
                 placeholderImage={dosVidThumbnail}
-                title="Depths of Sanity: Play-NYC Trailer"
+                title="Depths of Sanity - Story Teaser"
                 autoplay
               />
               <div className="MainSection-content u-retroFont">
