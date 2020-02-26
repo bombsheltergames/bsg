@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c95bf39ab585a1d2bce5759c24aeed1e",
+    "revision": "b7b18650a3664f7e2ac0a0a096a341f2",
     "url": "/index.html"
   },
   {
-    "revision": "66fc8575539902938a70",
-    "url": "/static/css/main.c657df98.chunk.css"
+    "revision": "ca070db316705a30ca5b",
+    "url": "/static/css/main.e586fb2f.chunk.css"
   },
   {
-    "revision": "a02989fa503c2521b7a6",
-    "url": "/static/js/2.38375bf7.chunk.js"
+    "revision": "e15b081727df4bd69ca0",
+    "url": "/static/js/2.9e76f0b6.chunk.js"
   },
   {
-    "revision": "66fc8575539902938a70",
-    "url": "/static/js/main.e0495a37.chunk.js"
+    "revision": "809f8196affeaac0e5176b72b79c267c",
+    "url": "/static/js/2.9e76f0b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42ac5946195a7306e2a5",
-    "url": "/static/js/runtime~main.a8a9905a.js"
+    "revision": "ca070db316705a30ca5b",
+    "url": "/static/js/main.75fa2932.chunk.js"
+  },
+  {
+    "revision": "cdd5994ba7be5a653d8c",
+    "url": "/static/js/runtime-main.42cfe096.js"
   },
   {
     "revision": "d23a45d6fc41dd7ce8d246bc2958a56d",
@@ -40,32 +44,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/05.16ea5a13.jpg"
   },
   {
-    "revision": "ad96555c801dfd6c17064c93a30115a3",
-    "url": "/static/media/06.ad96555c.jpg"
+    "revision": "f3fa9535c0a5407eaf01784334b0678d",
+    "url": "/static/media/06.f3fa9535.jpg"
   },
   {
     "revision": "ed174c717f5d9ce125ea9a2613d85ada",
     "url": "/static/media/07.ed174c71.jpg"
   },
   {
-    "revision": "da5e8d6d6da048408508210b61a3fb9c",
-    "url": "/static/media/08.da5e8d6d.jpg"
+    "revision": "4dc0cd4fd7e0f41fce33946787100aa3",
+    "url": "/static/media/08.4dc0cd4f.jpg"
   },
   {
     "revision": "f37a7a8fb61b8712d38102dd774575f9",
     "url": "/static/media/09.f37a7a8f.jpg"
   },
   {
-    "revision": "e0aa48054d43b46a88c3f44c88006a50",
-    "url": "/static/media/10.e0aa4805.jpg"
+    "revision": "20ccf187e084db25e87022635f4cd3d4",
+    "url": "/static/media/10.20ccf187.jpg"
   },
   {
     "revision": "fc3f5bad6e465c20aaf8bbfa7e2c8f02",
     "url": "/static/media/dos-hero.fc3f5bad.png"
   },
   {
-    "revision": "31c25b0be0ceb13364b346aeaf411c28",
-    "url": "/static/media/dos-previewImage.31c25b0b.png"
+    "revision": "5ec05d3aac2349a4fd4bc4d573fbe4f5",
+    "url": "/static/media/dos-previewImage.5ec05d3a.jpg"
   },
   {
     "revision": "d20e8fbe3629bc0ebf830eea09d3e58e",
