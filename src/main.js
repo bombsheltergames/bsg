@@ -31,10 +31,10 @@ import dosLogoThumbnail from "images/logo/dos-tentacles-sm.png";
 import dosLogo from "images/logo/dos-tentacles.png";
 import sonarIcon from "images/icons/sonar.gif";
 import pickupsIcon from "images/icons/pickups.png";
-import tilesIcon from "images/icons/tiles.png";
+import abeIcon from "images/icons/abe-sm.png";
 import shipIcon from "images/icons/ship.png";
 // Video Preview Images
-import dosVidPreview from "images/video/dos-previewImage.png";
+import dosVidPreview from "images/video/dos-previewImage.jpg";
 import dosVidThumbnail from "images/video/dos-previewImage.thumb.png";
 
 class Main extends Component {
@@ -51,7 +51,9 @@ class Main extends Component {
       height: window.innerHeight,
       playFirstParagraph: false,
       endFirstParagraph: false,
-      endSecondParagraph: false
+      endSecondParagraph: false,
+      endThirdParagraph: false,
+      endFourthParagraph: false
     };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
@@ -79,18 +81,35 @@ class Main extends Component {
     }
   }, 200);
 
-  firstIntroParagraph =
-    "From 1991-1999 a series of sounds have been detected deep within the ocean. All heard around the world, 3000 miles away from the detection center. Further away than any known creature can communicate.";
-  secondIntroParagraph =
-    "Ever since, the sounds have proceeded, each year moving closer and closer to the same location. All except this year. The sounds have reached their destination and have stopped all together. It’s your job to investigate...";
+  firstIntroParagraph = "The first ship went missing.";
+  secondIntroParagraph = "Now it's your turn.";
+  thirdIntroParagraph =
+    "When The Baroness submarine goes dark while investigating a massive vibration deep in the ocean, Abe Douglas, the commander who assembled its crew, makes it his responsibility to find out what happened.";
+  fourthIntroParagraph =
+    "As he plunges into the ocean, he has no idea that what he'll uncover will not only threaten the lives of his crew, but his own sanity.";
   startFirstTyping = () => {
     this.setState({ playFirstParagraph: true });
   };
   endFirstTyping = () => {
-    this.setState({ endFirstParagraph: true });
+    const timer = setTimeout(() => {
+      this.setState({ endFirstParagraph: true });
+    }, 500);
+    return () => clearTimeout(timer);
   };
   endSecondTyping = () => {
-    this.setState({ endSecondParagraph: true });
+    const timer = setTimeout(() => {
+      this.setState({ endSecondParagraph: true });
+    }, 1000);
+    return () => clearTimeout(timer);
+  };
+  endThirdTyping = () => {
+    const timer = setTimeout(() => {
+      this.setState({ endThirdParagraph: true });
+    }, 500);
+    return () => clearTimeout(timer);
+  };
+  endFourthTyping = () => {
+    this.setState({ endFourthParagraph: true });
   };
 
   // And here's the actual content
@@ -131,30 +150,44 @@ class Main extends Component {
             <Header />
             <MainSection id="trailer" fadeBg bottomDivider>
               <Video
-                id="BmAGlLSxHDE"
+                id="Z6SjXpgKkwg"
                 previewImage={dosVidPreview}
                 placeholderImage={dosVidThumbnail}
-                title="Depths of Sanity Release Date Announcement - They're Alive, Find Them"
+                title="Depths of Sanity PAX East 2020 Trailer"
                 autoplay
               />
               <div className="MainSection-content u-retroFont">
                 <InViewMonitor onInView={this.startFirstTyping}>
                   <p
                     className={`MainSection-content-introText ${
-                      this.state.endSecondParagraph ? "" : "u-hidden"
+                      this.state.endFourthParagraph ? "" : "u-hidden"
                     }`}
                   >
                     {this.firstIntroParagraph}
                   </p>
                   <p
-                    className={`TypedContent ${
-                      this.state.endSecondParagraph ? "" : "u-hidden"
+                    className={`MainSection-content-introText ${
+                      this.state.endFourthParagraph ? "" : "u-hidden"
                     }`}
                   >
                     {this.secondIntroParagraph}
                   </p>
+                  <p
+                    className={`MainSection-content-introText ${
+                      this.state.endFourthParagraph ? "" : "u-hidden"
+                    }`}
+                  >
+                    {this.thirdIntroParagraph}
+                  </p>
+                  <p
+                    className={`TypedContent ${
+                      this.state.endFourthParagraph ? "" : "u-hidden"
+                    }`}
+                  >
+                    {this.fourthIntroParagraph}
+                  </p>
                 </InViewMonitor>
-                {!this.state.endSecondParagraph && (
+                {!this.state.endFourthParagraph && (
                   <div
                     className="MainSection-content-typingWrapper"
                     aria-hidden="true"
@@ -169,61 +202,74 @@ class Main extends Component {
                     <TypedContent
                       play={this.state.endFirstParagraph}
                       onDone={this.endSecondTyping}
+                      removeCursor
                     >
                       {this.secondIntroParagraph}
                     </TypedContent>
+                    <TypedContent
+                      play={this.state.endSecondParagraph}
+                      onDone={this.endThirdTyping}
+                      removeCursor
+                    >
+                      {this.thirdIntroParagraph}
+                    </TypedContent>
+                    <TypedContent
+                      play={this.state.endThirdParagraph}
+                      onDone={this.endFourthTyping}
+                    >
+                      {this.fourthIntroParagraph}
+                    </TypedContent>
                   </div>
                 )}
-                <h3
+                {/* <h3
                   className={`MainSection-heading ${
-                    this.state.endSecondParagraph ? "u-fadeIn" : "u-hidden"
+                    this.state.endFourthParagraph ? "u-fadeIn" : "u-hidden"
                   }`}
                 >
                   Madness Comes to Us All
-                </h3>
+                </h3> */}
               </div>
             </MainSection>
             <MainSection>
               <div className="MainSection-content">
-                <p>
-                  Depths of Sanity is a Metroidvania action adventure game based
-                  on exploring the depths of the ocean. The player is tasked
-                  with investigating noises heard from the ocean that cannot be
-                  explained by scientists. As they delve deeper they begin to
-                  question their reality and their mission as a whole.
-                </p>
-
                 <ul className="MainSection-features">
                   <li>
-                    <img src={tilesIcon} alt="" />
-                    <h4 className="u-retroFont">6 Worlds to Explore</h4>
+                    <img src={abeIcon} alt="" />
+                    <h4 className="u-retroFont">Deep, Involving Storyline</h4>
                     <p>
-                      Reef, Ship Graveyard, Caves, Volcano, Deep Ocean, The
-                      Depths
+                      Discover the fate of each grew member of{" "}
+                      <em>The Baroness</em> and uncover the mystery of the
+                      signal coming from the ocean floor.
                     </p>
                   </li>
                   <li>
                     <img src={sonarIcon} alt="" />
-                    <h4 className="u-retroFont">Countless Secrets</h4>
+                    <h4 className="u-retroFont">
+                      Massive Interconnected World
+                    </h4>
                     <p>
-                      Use tools like sonar and a drill to navigate the dark
-                      depths in search of upgrades and unlocks
+                      Explore beautiful coral reefs, sunken wrecks, underground
+                      magma lairs and much more in your journey to the darkest
+                      depths of the ocean.
                     </p>
                   </li>
                   <li>
                     <img src={pickupsIcon} alt="" />
-                    <h4 className="u-retroFont">Dozens of Unlockables</h4>
+                    <h4 className="u-retroFont">Search, Scavenge, Survive</h4>
                     <p>
-                      Torpedoes, depth charges, lasers, bounce shots, diving
-                      equipment, new hulls, and much more
+                      Discover advanced weaponry to help you tackle new threats,
+                      and attachments that unlock new traversal options,
+                      including rock drills, tow lines, sonar, and more.
                     </p>
                   </li>
                   <li>
                     <img src={shipIcon} alt="" />
-                    <h4 className="u-retroFont">360 Degrees of Gameplay</h4>
+                    <h4 className="u-retroFont">Danger from Every Angle</h4>
                     <p>
-                      Take the helm of the O.R.C.A. in this new approach to the
-                      Metriodvania format
+                      With 360 degrees of movement, you're never safe in this
+                      adventure. Battle monstrous bosses, survive tense
+                      set-pieces, and uncover secrets that expand the story with
+                      your arsenal.
                     </p>
                   </li>
                 </ul>

@@ -17,7 +17,7 @@ const ContactInfo = () => {
       </p>
       <Button
         type="ghost"
-        href="https://bombsheltergamescom.ipage.com/DoSPressKit.zip"
+        href="https://bombsheltergamescom.ipage.com/DoSPressKit_2020-02.zip"
         download
       >
         Download Press Kit
