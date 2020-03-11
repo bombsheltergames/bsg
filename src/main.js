@@ -1,8 +1,6 @@
 // Framework Imports
 import React, { Component, Fragment } from "react";
 import throttle from "lodash/throttle";
-//import Typing from "react-typing-animation";
-//import LazyLoad from "react-lazyload";
 // Component Styles
 import "styles/main.css";
 // Component Imports
@@ -11,14 +9,11 @@ import HeroBanner from "PageSections/HeroBanner";
 import VideoTyping from "PageSections/VideoTyping";
 import Features from "PageSections/Features";
 import ScreenShotGallery from "PageSections/ScreenShotGallery";
-
-// import ContentPanel from "Components/ContentPanel"; - not currently in use, for the More Games section
-import ContactForm from "Components/ContactForm";
-import ContactInfo from "Components/ContactInfo";
+import ContactUs from "PageSections/ContactUs";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
+// Image Imports
 import footerImages from "data/footerImages";
-// import moreGames from "data/moreGames"; - not currently in use, for the More Games section
 
 class Main extends Component {
   // Most of this is a bunch of garbage so we can control when we're showing the Back to Top button
@@ -87,8 +82,7 @@ class Main extends Component {
               ))}
             </MainSection>
             */}
-            <ContactForm />
-            <ContactInfo />
+            <ContactUs />
             <Footer images={footerImages} />
           </main>
         </div>

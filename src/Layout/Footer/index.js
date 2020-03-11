@@ -1,7 +1,7 @@
 // Framework Imports
 import React from "react";
 // Component Styles
-import "./footerBar.css";
+import "./footer.css";
 // Component Imports
 import Image from "Components/Image";
 

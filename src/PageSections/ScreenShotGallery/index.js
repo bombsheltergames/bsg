@@ -7,7 +7,7 @@ import ImageGallery from "Components/ImageGallery";
 import screenshots from "data/screenshots";
 
 const ScreenShotGallery = () => (
-  <MainSection alt topDivider bottomDivider>
+  <MainSection alt topDivider bottomDivider expanded>
     <h2 className="u-accessibleText">Screenshot Gallery</h2>
     <ImageGallery images={screenshots} showModal />
   </MainSection>

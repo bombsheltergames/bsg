@@ -79,6 +79,9 @@
     background: $color--tertiary;
     padding: $spacing--3000 $spacing--1500;
   }
+  &--expanded {
+    padding: $spacing--5000 $spacing--1500;
+  }
   &--fadeBg {
     background: linear-gradient(
       to bottom,
