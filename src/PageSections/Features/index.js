@@ -1,7 +1,10 @@
 // Framework Imports
 import React from "react";
+// Style Imports
+import "./features.css";
 // Component Imports
 import MainSection from "Components/MainSection";
+import MainContent from "Components/MainContent";
 // Image Imports
 import sonarIcon from "data/images/icons/sonar.gif";
 import pickupsIcon from "data/images/icons/pickups.png";
@@ -10,8 +13,8 @@ import shipIcon from "data/images/icons/ship.png";
 
 const Features = () => (
   <MainSection>
-    <div className="MainSection-content">
-      <ul className="MainSection-features">
+    <MainContent>
+      <ul className="Features">
         <li>
           <img src={abeIcon} alt="" />
           <h4 className="u-retroFont">Deep, Involving Storyline</h4>
@@ -48,7 +51,7 @@ const Features = () => (
           </p>
         </li>
       </ul>
-    </div>
+    </MainContent>
   </MainSection>
 );
 

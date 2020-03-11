@@ -1,0 +1,28 @@
+.Blog-entry {
+  position: relative; }
+  .Blog-entry:nth-child(-n + 2) {
+    padding-bottom: 3rem; }
+    .Blog-entry:nth-child(-n + 2)::after {
+      content: "";
+      display: block;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      border-bottom: 2px solid white; }
+  .Blog-entry:not(:first-child) {
+    margin-top: 3rem; }
+
+.Blog-titleBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap; }
+  .Blog-titleBar h3 {
+    display: inline-block; }
+  .Blog-titleBar h4 {
+    width: 100%;
+    text-align: left; }
+
+.Blog p {
+  margin-top: 1rem; }

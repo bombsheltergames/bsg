@@ -1,0 +1,24 @@
+// Must include global vars in all files
+@import "styles/global/all";
+
+.MainContent {
+  margin: $spacing--1000 auto;
+  max-width: $bp--1500;
+  position: relative;
+  &.u-retroFont {
+    font-size: $font-size--500;
+    @media screen and (min-width: $bp--500) {
+      font-size: $font-size--800;
+    }
+    .MainSection-heading {
+      margin: $spacing--2000 0 $spacing--1500;
+      font-size: $font-size--2000;
+      @media screen and (min-width: $bp--500) {
+        font-size: $font-size--3000;
+      }
+    }
+  }
+  li {
+    margin: $spacing--500 0;
+  }
+}

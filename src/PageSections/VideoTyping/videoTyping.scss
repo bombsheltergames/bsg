@@ -1,0 +1,12 @@
+// Must include global vars in all files
+@import "styles/global/all";
+
+.VideoTyping {
+  &-introText {
+    padding-top: $spacing--1500;
+  }
+  &-typingWrapper {
+    position: absolute;
+    top: 0;
+  }
+}

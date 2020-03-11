@@ -17,64 +17,6 @@
     transition: opacity 2s;
     transition-delay: 1s;
   }
-  &-content {
-    margin: $spacing--1000 auto;
-    max-width: $bp--1500;
-    position: relative;
-    &.u-retroFont {
-      font-size: $font-size--500;
-      @media screen and (min-width: $bp--500) {
-        font-size: $font-size--800;
-      }
-      .MainSection-heading {
-        margin: $spacing--2000 0 $spacing--1500;
-        font-size: $font-size--2000;
-        @media screen and (min-width: $bp--500) {
-          font-size: $font-size--3000;
-        }
-      }
-    }
-    &-introText {
-      padding-top: $spacing--1500;
-    }
-    &-typingWrapper {
-      position: absolute;
-      top: 0;
-    }
-    li {
-      margin: $spacing--500 0;
-    }
-    &--cta {
-      text-align: center;
-      button {
-        width: 80%;
-        max-width: 400px;
-      }
-    }
-  }
-  &-features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    li {
-      text-align: center;
-      width: 80%;
-      margin-bottom: $spacing--1000;
-      @media screen and (min-width: $bp--1500) {
-        width: 45%;
-        &:nth-child(-n + 2) h4 {
-          height: 4rem;
-        }
-      }
-      p {
-        text-align: left;
-      }
-    }
-    h4 {
-      font-size: $font-size--800;
-      margin-bottom: $spacing--500;
-    }
-  }
   &--alt {
     background: $color--tertiary;
     padding: $spacing--3000 $spacing--1500;

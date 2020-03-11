@@ -1,14 +1,15 @@
 // Framework Imports
 import React, { Component, Fragment } from "react";
 import throttle from "lodash/throttle";
-// Component Styles
+// Style Imports
 import "styles/main.css";
-// Component Imports
+// Page Layout & Section Imports
 import Header from "Layout/Header";
 import HeroBanner from "PageSections/HeroBanner";
 import VideoTyping from "PageSections/VideoTyping";
 import Features from "PageSections/Features";
 import ScreenShotGallery from "PageSections/ScreenShotGallery";
+import Blog from "PageSections/Blog";
 import ContactUs from "PageSections/ContactUs";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
@@ -82,6 +83,7 @@ class Main extends Component {
               ))}
             </MainSection>
             */}
+            <Blog />
             <ContactUs />
             <Footer images={footerImages} />
           </main>

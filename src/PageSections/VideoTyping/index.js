@@ -1,11 +1,14 @@
 // Framework Imports
 import React, { Component } from "react";
 import InViewMonitor from "react-inview-monitor";
+// Style Imports
+import "./videoTyping.css";
 // Component Imports
 import MainSection from "Components/MainSection";
+import MainContent from "Components/MainContent";
 import Video from "Components/Video";
 import TypedContent from "Components/TypedContent";
-// Video Preview Images
+// Image Imports
 import dosVidPreview from "data/images/video/dos-previewImage.jpg";
 import dosVidThumbnail from "data/images/video/dos-previewImage.thumb.png";
 
@@ -67,24 +70,24 @@ class VideoTypingSection extends Component {
           title="Depths of Sanity PAX East 2020 Trailer"
           autoplay
         />
-        <div className="MainSection-content u-retroFont">
+        <MainContent retroFont>
           <InViewMonitor onInView={this.startTyping}>
             <p
-              className={`MainSection-content-introText ${
+              className={`VideoTyping-introText ${
                 endFourthParagraph ? "" : "u-hidden"
               }`}
             >
               {firstIntroParagraph}
             </p>
             <p
-              className={`MainSection-content-introText ${
+              className={`VideoTyping-introText ${
                 endFourthParagraph ? "" : "u-hidden"
               }`}
             >
               {secondIntroParagraph}
             </p>
             <p
-              className={`MainSection-content-introText ${
+              className={`VideoTyping-introText ${
                 endFourthParagraph ? "" : "u-hidden"
               }`}
             >
@@ -97,10 +100,7 @@ class VideoTypingSection extends Component {
             </p>
           </InViewMonitor>
           {!endFourthParagraph && (
-            <div
-              className="MainSection-content-typingWrapper"
-              aria-hidden="true"
-            >
+            <div className="VideoTyping-typingWrapper" aria-hidden="true">
               <TypedContent
                 play={playFirstParagraph}
                 onDone={this.endFirstTyping}
@@ -134,7 +134,7 @@ class VideoTypingSection extends Component {
         >
           Madness Comes to Us All
         </h3> */}
-        </div>
+        </MainContent>
       </MainSection>
     );
   }
