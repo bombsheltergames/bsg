@@ -37,15 +37,14 @@ class Image extends Component {
   }
 
   render() {
+    const { cssClasses, alt, src } = this.props;
+    const { placeholderStyle, imageLoadFinishedClass } = this.state;
     return (
-      <div
-        className={`Image-wrap ${this.props.cssClasses}`}
-        style={this.state.placeholderStyle}
-      >
+      <div className={`Image-wrap ${cssClasses}`} style={placeholderStyle}>
         <img
-          className={`Image ${this.state.imageLoadFinishedClass}`}
-          alt={this.props.alt}
-          src={this.props.src}
+          className={`Image ${imageLoadFinishedClass}`}
+          alt={alt}
+          src={src}
           onLoad={this.imageLoadHandler}
         />
       </div>
@@ -61,6 +60,7 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
+  placeholder: "",
   alt: "",
   cssClasses: "",
 };

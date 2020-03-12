@@ -4,12 +4,6 @@ import PropTypes from "prop-types";
 import { createPortal } from "react-dom";
 
 export default class Portal extends Component {
-  static propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    children: PropTypes.node.isRequired
-  };
-  static defaultProps = { isOpen: false };
-
   constructor(props) {
     super(props);
 
@@ -28,3 +22,13 @@ export default class Portal extends Component {
     }
   }
 }
+
+Portal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
+Portal.defaultProps = {
+  isOpen: false,
+  children: undefined,
+};

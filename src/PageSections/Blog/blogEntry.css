@@ -1,0 +1,41 @@
+.BlogEntry {
+  position: relative; }
+  .BlogEntry:not(:last-child) {
+    padding-bottom: 3rem; }
+    .BlogEntry:not(:last-child)::after {
+      content: "";
+      display: block;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      border-bottom: 1px solid white; }
+  .BlogEntry:not(:first-child) {
+    margin-top: 3rem; }
+  .BlogEntry-titleBar h3 {
+    display: inline-block;
+    line-height: 1; }
+  .BlogEntry-body--clipped {
+    position: relative;
+    max-height: 150px;
+    overflow: hidden; }
+    .BlogEntry-body--clipped::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, #01264f 70%, #01264f); }
+    .BlogEntry-body--clipped + .Button {
+      display: block;
+      margin: 0 auto; }
+  .BlogEntry-body p {
+    margin-top: 1rem; }
+  .BlogEntry-author {
+    margin-bottom: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between; }

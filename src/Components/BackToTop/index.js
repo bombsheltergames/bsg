@@ -1,85 +1,66 @@
 // Framework Imports
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 // Style Imports
 import "./backToTop.css";
 // Image Imports
 import diver from "data/images/layout/diver-swim.gif";
 
-class BackToTop extends Component {
-  constructor() {
-    super();
+const SCROLL_STEP = 80; // px
+const DELAY = 16.66; // ms
 
-    this.state = {
-      intervalId: 0,
-      show: false,
-      fadeClass: "",
-    };
-  }
+const BackToTop = props => {
+  const [intervalId, setIntervalId] = useState(0);
+  const [show, setShow] = useState(false);
+  const [fadeClass, setFadeClass] = useState("");
+  const { visible } = props;
 
-  componentWillReceiveProps(newProps) {
-    // Check for the visible props
-    if (!newProps.visible) return this.updateStyle(false); // Call outro animation when mounted prop is false
-    this.setState({
-      // Remount the node when the visible prop is true
-      show: true,
-    });
-    this.updateStyle(true); // Call the intro animation
-  }
+  useEffect(() => {
+    if (!visible) {
+      // Call outro animation when mounted prop is false
+      updateStyle(false);
+    } else {
+      setShow(true);
+      updateStyle(true);
+    }
+  }, [visible]);
 
-  updateStyle = shouldShow => {
+  const updateStyle = shouldShow => {
     // Add styles for mount/unmount animation
-    const fadeClass = shouldShow ? "fadeIn" : "fadeOut";
-    this.setState({
-      fadeClass: fadeClass,
-    });
+    const newFadeClass = shouldShow ? "fadeIn" : "fadeOut";
+    setFadeClass(newFadeClass);
   };
 
-  transitionEnd = () => {
-    if (!this.props.visible) {
-      // Remove the node on transition end when the visible prop is false
-      this.setState({
-        show: false,
-      });
-    }
-  };
-
-  scrollStep = () => {
+  const scrollStep = () => {
     if (window.pageYOffset === 0) {
-      clearInterval(this.state.intervalId);
+      clearInterval(intervalId);
     }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+    window.scroll(0, window.pageYOffset - SCROLL_STEP);
   };
 
-  scrollToTop = () => {
-    let intervalId = setInterval(
-      this.scrollStep.bind(this),
-      this.props.delayInMs
-    );
-    this.setState({ intervalId: intervalId });
+  const scrollToTop = () => {
+    let newIntervalId = setInterval(scrollStep.bind(this), DELAY);
+    setIntervalId(newIntervalId);
   };
 
-  render() {
-    return (
-      this.state.show && (
-        <nav className="BackToTop-wrap">
-          <button
-            className={`BackToTop ${this.state.fadeClass}`}
-            onClick={this.scrollToTop}
-          >
-            &#8963;
-            <span className="u-accessibleText">Back To Top</span>
-            <img src={diver} className="BackToTop-image" alt="" />
-          </button>
-        </nav>
-      )
-    );
-  }
-}
+  return (
+    show && (
+      <nav className="BackToTop-wrap">
+        <button className={`BackToTop ${fadeClass}`} onClick={scrollToTop}>
+          &#8963;
+          <span className="u-accessibleText">Back To Top</span>
+          <img src={diver} className="BackToTop-image" alt="" />
+        </button>
+      </nav>
+    )
+  );
+};
+
+BackToTop.propTypes = {
+  visible: PropTypes.bool,
+};
 
 BackToTop.defaultProps = {
-  scrollStepInPx: 80,
-  delayInMs: 16.66,
-  scrollTarget: window,
   visible: false,
 };
 

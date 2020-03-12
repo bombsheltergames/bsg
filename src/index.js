@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "styles/index.css";
-import Main from "./main";
+import Routes from "./Routes";
 import { unregister } from "./registerServiceWorker";
 
-ReactDOM.render(<Main />, document.getElementById("main-root"));
+ReactDOM.render(<Routes />, document.getElementById("main-root"));
 unregister();

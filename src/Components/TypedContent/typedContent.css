@@ -2,7 +2,7 @@
   margin-top: 1.5rem; }
   .TypedContent::after {
     display: inline-block;
-    content: '';
+    content: "";
     color: white;
     width: 1em;
     height: 1em;

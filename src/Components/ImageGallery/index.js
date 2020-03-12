@@ -1,29 +1,34 @@
 // Framework Imports
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 // Style Imports
 import "./imageGallery.css";
 // Component Imports
 import ImageGalleryItem from "./ImageGalleryItem";
 
-class ImageGallery extends Component {
-  render() {
-    return (
-      <div className="ImageGallery">
-        {this.props.images.map((image, index) => (
-          <ImageGalleryItem
-            key={index}
-            image={image}
-            maxItemWidth={this.props.maxItemWidth}
-            showModal={this.props.showModal}
-            showTitleThumb={this.props.showTitleThumb}
-            showTitleModal={this.props.showTitleModal}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+const ImageGallery = props => {
+  const {
+    images,
+    maxItemWidth,
+    showModal,
+    showTitleThumb,
+    showTitleModal,
+  } = props;
+  return (
+    <div className="ImageGallery">
+      {images.map((image, index) => (
+        <ImageGalleryItem
+          key={index}
+          image={image}
+          maxItemWidth={maxItemWidth}
+          showModal={showModal}
+          showTitleThumb={showTitleThumb}
+          showTitleModal={showTitleModal}
+        />
+      ))}
+    </div>
+  );
+};
 
 ImageGallery.propTypes = {
   images: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
@@ -33,6 +38,7 @@ ImageGallery.propTypes = {
   showTitleModal: PropTypes.bool,
 };
 ImageGallery.defaultProps = {
+  maxItemWidth: null,
   showModal: false,
   showTitleThumb: false,
   showTitleModal: false,

@@ -1,4 +1,4 @@
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 .Footer {
   padding-top: 200px;
@@ -75,10 +75,10 @@
         text-decoration: none;
         margin-right: $spacing--500;
         border-radius: $radius--500;
-        transition: background-color .3s;
+        transition: background-color 0.3s;
         svg {
           color: $color--white;
-          transition: color .3s;
+          transition: color 0.3s;
         }
       }
     }

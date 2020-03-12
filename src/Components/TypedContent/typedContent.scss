@@ -1,10 +1,10 @@
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 .TypedContent {
   margin-top: $spacing--1500;
   &::after {
     display: inline-block;
-    content: '';
+    content: "";
     color: $color--white;
     width: 1em;
     height: 1em;

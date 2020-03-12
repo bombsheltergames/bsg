@@ -10,25 +10,32 @@ import Image from "Components/Image";
 
 const Video = props => {
   const [play, setPlay] = useState(false);
+  const {
+    autoplay,
+    showTitle,
+    title,
+    id,
+    previewImage,
+    placeholderImage,
+  } = props;
+
   const playVideo = () => {
     setPlay(true);
   };
 
-  const autoplayParam = props.autoplay ? "?autoplay=1" : "";
-  const WrapperEl = props.showTitle ? "div" : "h2";
-  const title = props.showTitle && (
-    <h2 className="Video-title">{props.title}</h2>
-  );
+  const WrapperEl = showTitle ? "div" : "h2";
 
   return (
     <section className="Video">
-      {title}
+      {showTitle && <h2 className="Video-title">{title}</h2>}
       {play ? (
         <WrapperEl className="Video-wrapper">
           <iframe
-            title={props.title}
+            title={title}
             className="Video-frame"
-            src={`https://www.youtube.com/embed/${props.id}${autoplayParam}`}
+            src={`https://www.youtube.com/embed/${id}${
+              autoplay ? "?autoplay=1" : ""
+            }`}
             frameBorder="0"
             allow="autoplay"
             allowFullScreen
@@ -39,9 +46,9 @@ const Video = props => {
           <WrapperEl className="Video-placeholder">
             <Image
               className="Video-placeholderImg"
-              src={props.previewImage}
-              placeholder={props.placeholderImage}
-              alt={!props.showTitle ? props.title : ""}
+              src={previewImage}
+              placeholder={placeholderImage}
+              alt={!showTitle ? title : ""}
             />
             <img className="Video-playBtn" src={playBtn} alt="Play Video" />
           </WrapperEl>
@@ -55,8 +62,15 @@ Video.propTypes = {
   autoplay: PropTypes.bool,
   showTitle: PropTypes.bool,
   title: PropTypes.string,
-  previewImage: PropTypes.string,
-  id: PropTypes.string,
+  previewImage: PropTypes.string.isRequired, // todo - maybe allow for this without a preview image
+  placeholderImage: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
+
+Video.defaultProps = {
+  autoplay: false,
+  showTitle: false,
+  title: "",
 };
 
 export default Video;

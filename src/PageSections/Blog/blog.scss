@@ -1,40 +1,33 @@
 // Must include global vars in all files
-@import "styles/global/all";
+@import "styles/global/vars";
 
 // Component styles below
 .Blog {
-  &-entry {
-    position: relative;
-    &:nth-child(-n + 2) {
-      padding-bottom: $spacing--3000;
-      &::after {
-        content: "";
-        display: block;
-        width: 80%;
-        position: absolute;
-        bottom: 0;
-        left: 10%;
-        border-bottom: 2px solid $color--white;
-      }
-    }
-    &:not(:first-child) {
-      margin-top: $spacing--3000;
+  &-entries {
+    &:only-child() {
+      margin-bottom: $spacing--3000;
     }
   }
-  &-titleBar {
+  &-pagination {
+    margin: $spacing--2000 auto 0;
+    max-width: $bp--500;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    h3 {
-      display: inline-block;
-    }
-    h4 {
-      width: 100%;
-      text-align: left;
+    &-link {
+      color: $color--white;
+      &.is-disabled {
+        color: rgba($color--white, 0.3);
+        cursor: initial;
+        text-decoration: none;
+      }
     }
   }
-  p {
-    margin-top: $spacing--1000;
+  &-viewAll {
+    text-align: center;
+    margin-top: $spacing--2000;
+    a {
+      color: $color--white;
+      font-size: $font-size--3000;
+    }
   }
 }

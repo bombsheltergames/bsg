@@ -6,7 +6,7 @@
   @media screen and (min-width: 480px) {
     .ContentPanel {
       grid-template-columns: 1fr 1fr; }
-      .ContentPanel:nth-child(2n+1) .ContentPanel-image {
+      .ContentPanel:nth-child(2n + 1) .ContentPanel-image {
         grid-column: 2; } }
   @media screen and (min-width: 650px) {
     .ContentPanel {
@@ -16,7 +16,7 @@
         min-width: 200px; }
       .ContentPanel-content {
         grid-column: 2 / span 2; }
-      .ContentPanel:nth-child(2n+1) .ContentPanel-image {
+      .ContentPanel:nth-child(2n + 1) .ContentPanel-image {
         grid-column: 3; }
-      .ContentPanel:nth-child(2n+1) .ContentPanel-content {
+      .ContentPanel:nth-child(2n + 1) .ContentPanel-content {
         grid-column: 1 / span 2; } }

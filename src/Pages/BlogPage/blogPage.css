@@ -1,0 +1,8 @@
+body,
+html,
+#main-root {
+  height: 100%; }
+
+.BlogPage {
+  min-height: 100%;
+  padding-top: 1rem; }

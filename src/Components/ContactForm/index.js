@@ -1,5 +1,5 @@
 // Framework Imports
-import React, { Component } from "react";
+import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 // Component Imports
 import Button from "Components/Button";
@@ -62,22 +62,21 @@ const MailChimpForm = ({ status, message, onValidated }) => {
   );
 };
 
-class ContactForm extends Component {
-  render() {
-    const url =
-      "https://BombShelterGames.us17.list-manage.com/subscribe/post?u=ca117c04f6c608b67c401f861&amp;id=450f0ed1cb";
-    return (
-      <MailchimpSubscribe
-        url={url}
-        render={({ subscribe, status, message }) => (
-          <MailChimpForm
-            status={status}
-            message={message}
-            onValidated={formData => subscribe(formData)}
-          />
-        )}
-      />
-    );
-  }
-}
+const ContactForm = () => {
+  const url =
+    "https://BombShelterGames.us17.list-manage.com/subscribe/post?u=ca117c04f6c608b67c401f861&amp;id=450f0ed1cb";
+  return (
+    <MailchimpSubscribe
+      url={url}
+      render={({ subscribe, status, message }) => (
+        <MailChimpForm
+          status={status}
+          message={message}
+          onValidated={formData => subscribe(formData)}
+        />
+      )}
+    />
+  );
+};
+
 export default ContactForm;

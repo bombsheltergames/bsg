@@ -1,0 +1,13 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+body,
+html,
+#main-root {
+  height: 100%;
+}
+.BlogPage {
+  min-height: 100%;
+  padding-top: $spacing--1000;
+}

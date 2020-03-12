@@ -16,10 +16,12 @@ const ContentPanel = props => {
     </div>
   );
 };
+
 ContentPanel.propTypes = {
   image: PropTypes.node.isRequired,
   imageAlt: PropTypes.string,
 };
+
 ContentPanel.defaultProps = {
   imageAlt: "",
 };

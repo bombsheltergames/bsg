@@ -1,4 +1,4 @@
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 .ContentPanel {
   display: grid;
@@ -7,7 +7,7 @@
   padding-bottom: $spacing--1000;
   @media screen and (min-width: $bp--500) {
     grid-template-columns: 1fr 1fr;
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       .ContentPanel {
         &-image {
           grid-column: 2;
@@ -24,7 +24,7 @@
     &-content {
       grid-column: 2 / span 2;
     }
-    &:nth-child(2n+1) {
+    &:nth-child(2n + 1) {
       .ContentPanel {
         &-image {
           grid-column: 3;

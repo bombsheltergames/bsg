@@ -1,5 +1,5 @@
 // Must include global vars in all files
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 // Component styles below
 .BackToTop {
@@ -28,14 +28,14 @@
   padding: $spacing--250;
   width: 40px;
   // Animation & Transition Effects
-  transition: background-color .3s, border-color .3s, opacity .7s;
+  transition: background-color 0.3s, border-color 0.3s, opacity 0.7s;
   animation-name: fadeIn;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   // Adjust for hover/active/focus states
   &:hover,
   &:focus,
   &:active {
-    border-color: rgba($color--white, .5);
+    border-color: rgba($color--white, 0.5);
     background-color: darken($color--primary, $tint--2000);
   }
   // Position & size the diver gif

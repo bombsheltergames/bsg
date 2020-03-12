@@ -1,5 +1,6 @@
 // Framework Imports
 import React from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
 // Style Imports
 import "./mainContent.css";
@@ -8,6 +9,15 @@ const MainContent = props => {
   const { retroFont, children } = props;
   const cssClasses = clsx(["MainContent", retroFont && "u-retroFont"]);
   return <div className={cssClasses}>{children}</div>;
+};
+
+MainContent.propTypes = {
+  retroFont: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+};
+
+MainContent.defaultProps = {
+  retroFont: false,
 };
 
 export default MainContent;

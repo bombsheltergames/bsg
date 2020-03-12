@@ -1,0 +1,63 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+.BlogEntry {
+  position: relative;
+  &:not(:last-child) {
+    padding-bottom: $spacing--3000;
+    &::after {
+      content: "";
+      display: block;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      border-bottom: 1px solid $color--white;
+    }
+  }
+  &:not(:first-child) {
+    margin-top: $spacing--3000;
+  }
+  &-titleBar {
+    h3 {
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+  &-body {
+    &--clipped {
+      position: relative;
+      max-height: 150px;
+      overflow: hidden;
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0) 0%,
+          $color--secondary 70%,
+          $color--secondary
+        );
+      }
+      + .Button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    p {
+      margin-top: $spacing--1000;
+    }
+  }
+  &-author {
+    margin-bottom: $spacing--1000;
+    border-top: 1px solid rgba($color--white, 0.5);
+    display: flex;
+    justify-content: space-between;
+  }
+}

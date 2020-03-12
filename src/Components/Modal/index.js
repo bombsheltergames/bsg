@@ -1,35 +1,36 @@
 // Framework Imports
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 // Style Imports
 import "./modal.css";
 // Component Imports
 import Portal from "./Portal";
 
-class Modal extends Component {
-  render() {
-    return (
-      <Portal isOpen={this.props.isOpen}>
-        <div
-          className={`Modal Modal--${this.props.type}`}
-          onClick={this.props.handleClose}
-        >
-          <button className="Modal-close" onClick={this.props.handleClose}>
-            Close
-          </button>
-          <div className="Modal-inner">{this.props.children}</div>
-        </div>
-      </Portal>
-    );
-  }
-}
+const Modal = props => {
+  const { isOpen, type, handleClose, children } = props;
+  return (
+    <Portal isOpen={isOpen}>
+      <div className={`Modal Modal--${type}`} onClick={handleClose}>
+        <button className="Modal-close" onClick={handleClose}>
+          Close
+        </button>
+        <div className="Modal-inner">{children}</div>
+      </div>
+    </Portal>
+  );
+};
 
 Modal.propTypes = {
   isOpen: PropTypes.bool,
+  type: PropTypes.string,
+  handleClose: PropTypes.func,
+  children: PropTypes.node.isRequired,
 };
+
 Modal.defaultProps = {
   isOpen: false,
-  handleClose() {},
+  type: "image",
+  handleClose: () => {},
 };
 
 export default Modal;

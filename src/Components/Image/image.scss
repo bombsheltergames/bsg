@@ -1,12 +1,12 @@
 // Must include global vars in all files
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 // Component styles below
 .Image {
   display: block;
   width: 100%;
   opacity: 0;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   &.isLoaded {
     opacity: 1;
   }

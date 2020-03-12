@@ -1,5 +1,5 @@
 // Must include global vars in all files
-@import 'styles/global/all';
+@import "styles/global/vars";
 
 // Component styles below
 .Video {
@@ -36,8 +36,8 @@
     transform: translate(-50%, -50%);
     width: 40%;
     max-width: 100px;
-    opacity: .5;
-    transition: opacity .3s;
+    opacity: 0.5;
+    transition: opacity 0.3s;
     .Video:hover &,
     .Video:focus &,
     .Video:active & {
