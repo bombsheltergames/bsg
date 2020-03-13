@@ -1,6 +1,7 @@
 // Framework Imports
 import React, { useState, useEffect } from "react";
 // Component Imports
+import AutoScrollTop from "Layout/AutoScrollTop";
 import Header from "Layout/Header";
 import Blog, { initBlog } from "PageSections/Blog";
 import Footer from "Layout/Footer";
@@ -16,6 +17,7 @@ const BlogPage = () => {
   }, [blogPosts.length]);
   return (
     <>
+      <AutoScrollTop />
       <Header />
       <div className="BlogPage">
         <h1>Into the Depths...</h1>
