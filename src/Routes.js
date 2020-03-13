@@ -9,12 +9,8 @@ export default function Routes() {
     <Router>
       <AutoScrollTop />
       <Switch>
-        <Route path="/blog/:page">
-          <BlogPage />
-        </Route>
-        <Route path="/">
-          <Homepage />
-        </Route>
+        <Route path="/blog/:page?" component={BlogPage} />
+        <Route path="/" component={Homepage} />
       </Switch>
     </Router>
   );
