@@ -7,9 +7,9 @@ import Tabletop from "tabletop";
 // Style Imports
 import "./blog.css";
 // Component Imports
-import MainSection from "Components/MainSection";
-import MainContent from "Components/MainContent";
 import BlogEntry from "./BlogEntry";
+import MainSection from "Layout/MainSection";
+import MainContent from "Layout/MainContent";
 
 const preview = window.location.search.includes("preview");
 
@@ -38,6 +38,7 @@ const Blog = props => {
     showViewAll,
     showPagination,
     clipPosts,
+    useSections,
   } = props;
   let { page } = useParams();
   page = Number(page);
@@ -73,47 +74,53 @@ const Blog = props => {
     }
   };
   return (
-    <MainSection>
-      <MainContent>
-        <div className="Blog">
-          <div className="Blog-entries">
-            {posts.slice(start, end).map((post, i) => (
-              <BlogEntry post={post} key={i} clipPosts={clipPosts} />
-            ))}
-          </div>
-          {displayPagination && (
-            <div className="Blog-pagination">
-              <Link
-                to={`/blog/${Number(currentPage) - 1}${
-                  preview ? "?preview" : ""
-                }`}
-                className={prevLinkClasses}
-                onClick={cancelLink.bind(this, firstPage)}
+    <div className="Blog">
+      <div className="Blog-entries">
+        {posts.slice(start, end).map((post, i) => {
+          if (useSections) {
+            const useDividers = i % 2 === 1;
+            return (
+              <MainSection
+                topDivider={useDividers}
+                alt={useDividers}
+                bottomDivider={useDividers}
               >
-                {`< Prev`}
-              </Link>
-              <span>
-                Viewing {start + 1}-{end} of {posts.length}
-              </span>
-              <Link
-                to={`/blog/${Number(currentPage) + 1}${
-                  preview ? "?preview" : ""
-                }`}
-                className={nextLinkClasses}
-                onClick={cancelLink.bind(this, lastPage)}
-              >
-                {`Next >`}
-              </Link>
-            </div>
-          )}
-          {displayViewAllLink && (
-            <div className="Blog-viewAll">
-              <Link to="/blog/1">View All Blog Posts</Link>
-            </div>
-          )}
+                <MainContent>
+                  <BlogEntry post={post} key={i} clipPosts={clipPosts} />
+                </MainContent>
+              </MainSection>
+            );
+          }
+          return <BlogEntry post={post} key={i} clipPosts={clipPosts} />;
+        })}
+      </div>
+      {displayPagination && (
+        <div className="Blog-pagination">
+          <Link
+            to={`/blog/${Number(currentPage) - 1}${preview ? "?preview" : ""}`}
+            className={prevLinkClasses}
+            onClick={cancelLink.bind(this, firstPage)}
+          >
+            {`< Prev`}
+          </Link>
+          <span>
+            Viewing {start + 1}-{end} of {posts.length}
+          </span>
+          <Link
+            to={`/blog/${Number(currentPage) + 1}${preview ? "?preview" : ""}`}
+            className={nextLinkClasses}
+            onClick={cancelLink.bind(this, lastPage)}
+          >
+            {`Next >`}
+          </Link>
         </div>
-      </MainContent>
-    </MainSection>
+      )}
+      {displayViewAllLink && (
+        <div className="Blog-viewAll">
+          <Link to="/blog/1">View All Blog Posts</Link>
+        </div>
+      )}
+    </div>
   );
 };
 

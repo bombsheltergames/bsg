@@ -6,17 +6,23 @@ import clsx from "clsx";
 import "./mainContent.css";
 
 const MainContent = props => {
-  const { retroFont, children } = props;
-  const cssClasses = clsx(["MainContent", retroFont && "u-retroFont"]);
+  const { noMargin, retroFont, children } = props;
+  const cssClasses = clsx([
+    "MainContent",
+    noMargin && "MainContent--noMargin",
+    retroFont && "u-retroFont",
+  ]);
   return <div className={cssClasses}>{children}</div>;
 };
 
 MainContent.propTypes = {
+  noMargin: PropTypes.bool,
   retroFont: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 
 MainContent.defaultProps = {
+  noMargin: false,
   retroFont: false,
 };
 

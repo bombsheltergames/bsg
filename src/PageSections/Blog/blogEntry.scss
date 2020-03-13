@@ -28,7 +28,7 @@
   &-body {
     &--clipped {
       position: relative;
-      max-height: 150px;
+      max-height: 250px;
       overflow: hidden;
       &::before {
         content: "";
@@ -52,6 +52,11 @@
     }
     p {
       margin-top: $spacing--1000;
+    }
+    img {
+      max-width: 75%;
+      display: block;
+      margin: auto;
     }
   }
   &-author {

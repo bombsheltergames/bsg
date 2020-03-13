@@ -3,8 +3,8 @@ import React from "react";
 // Style Imports
 import "./features.css";
 // Component Imports
-import MainSection from "Components/MainSection";
-import MainContent from "Components/MainContent";
+import MainSection from "Layout/MainSection";
+import MainContent from "Layout/MainContent";
 // Image Imports
 import sonarIcon from "data/images/icons/sonar.gif";
 import pickupsIcon from "data/images/icons/pickups.png";

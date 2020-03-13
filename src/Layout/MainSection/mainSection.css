@@ -27,5 +27,3 @@
     top: 0; }
   .MainSection-footerImg {
     bottom: 0; }
-  .MainSection:nth-last-child(2) .MainSection-footerImg {
-    display: none; }

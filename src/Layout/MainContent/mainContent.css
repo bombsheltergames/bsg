@@ -2,6 +2,8 @@
   margin: 1rem auto;
   max-width: 768px;
   position: relative; }
+  .MainContent--noMargin {
+    margin: 0 auto; }
   .MainContent.u-retroFont {
     font-size: 0.8rem; }
     @media screen and (min-width: 480px) {

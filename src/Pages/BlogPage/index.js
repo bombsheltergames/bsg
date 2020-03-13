@@ -1,12 +1,13 @@
 // Framework Imports
 import React, { useState, useEffect } from "react";
+// Style Imports
+import "./blogPage.css";
 // Component Imports
 import AutoScrollTop from "Layout/AutoScrollTop";
 import Header from "Layout/Header";
 import Blog, { initBlog } from "PageSections/Blog";
 import Footer from "Layout/Footer";
-// Style Imports
-import "./blogPage.css";
+import Breadcrumb from "../../Layout/Breadcrumb";
 
 const BlogPage = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -16,15 +17,13 @@ const BlogPage = () => {
     }
   }, [blogPosts.length]);
   return (
-    <>
+    <div className="BlogPage">
       <AutoScrollTop />
       <Header />
-      <div className="BlogPage">
-        <h1>Into the Depths...</h1>
-        <Blog posts={blogPosts} entriesToShow={10} showPagination />
-      </div>
+      <Breadcrumb pageTitle="Blog" />
+      <Blog useSections posts={blogPosts} entriesToShow={10} showPagination />
       <Footer />
-    </>
+    </div>
   );
 };
 

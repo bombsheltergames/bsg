@@ -9,8 +9,9 @@ import HeroBanner from "PageSections/HeroBanner";
 import VideoTyping from "PageSections/VideoTyping";
 import Features from "PageSections/Features";
 import ScreenShotGallery from "PageSections/ScreenShotGallery";
+import MainSection from "Layout/MainSection";
+import MainContent from "Layout/MainContent";
 import Blog, { initBlog } from "PageSections/Blog";
-import ContactUs from "PageSections/ContactUs";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
 // Image Imports
@@ -68,8 +69,16 @@ class Homepage extends Component {
               ))}
             </MainSection>
             */}
-            <Blog posts={blogPosts} entriesToShow={2} showViewAll clipPosts />
-            <ContactUs />
+            <MainSection>
+              <MainContent>
+                <Blog
+                  posts={blogPosts}
+                  entriesToShow={2}
+                  showViewAll
+                  clipPosts
+                />
+              </MainContent>
+            </MainSection>
             <Footer images={footerImages} />
           </main>
         </div>

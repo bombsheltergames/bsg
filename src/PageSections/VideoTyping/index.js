@@ -4,8 +4,8 @@ import InViewMonitor from "react-inview-monitor";
 // Style Imports
 import "./videoTyping.css";
 // Component Imports
-import MainSection from "Components/MainSection";
-import MainContent from "Components/MainContent";
+import MainSection from "Layout/MainSection";
+import MainContent from "Layout/MainContent";
 import Video from "Components/Video";
 import TypedContent from "Components/TypedContent";
 // Image Imports

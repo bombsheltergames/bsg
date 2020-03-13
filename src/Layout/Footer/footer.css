@@ -1,5 +1,7 @@
 .Footer {
   padding-top: 200px; }
+  .Footer-wrapper {
+    position: relative; }
   .Footer-content {
     background: black;
     color: white;

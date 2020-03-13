@@ -1,7 +1,7 @@
 // Framework Imports
 import React from "react";
 // Component Imports
-import MainSection from "Components/MainSection";
+import MainSection from "Layout/MainSection";
 import ImageGallery from "Components/ImageGallery";
 // External Data
 import screenshots from "data/screenshots";

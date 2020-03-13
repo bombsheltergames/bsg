@@ -17,7 +17,7 @@
     line-height: 1; }
   .BlogEntry-body--clipped {
     position: relative;
-    max-height: 150px;
+    max-height: 250px;
     overflow: hidden; }
     .BlogEntry-body--clipped::before {
       content: "";
@@ -34,6 +34,10 @@
       margin: 0 auto; }
   .BlogEntry-body p {
     margin-top: 1rem; }
+  .BlogEntry-body img {
+    max-width: 75%;
+    display: block;
+    margin: auto; }
   .BlogEntry-author {
     margin-bottom: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);

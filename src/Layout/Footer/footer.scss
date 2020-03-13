@@ -1,7 +1,11 @@
+// Must include global vars in all files
 @import "styles/global/vars";
 
 .Footer {
   padding-top: 200px;
+  &-wrapper {
+    position: relative;
+  }
   &-content {
     background: $color--black;
     color: $color--white;
