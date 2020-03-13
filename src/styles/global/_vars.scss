@@ -1,7 +1,7 @@
 // Global variables to use across all Sass files
 
 // Colors
-$color--primary: #1f6db6;
+$color--primary: #4396ea;
 $color--secondary: #01264f;
 $color--tertiary: #011226;
 $color--error: #ed0000;
@@ -13,10 +13,10 @@ $color--white: white;
 $font-size--base: 20px;
 $font-size--4000: 1.8em; // 36px
 $font-size--3000: 1.5rem; // 28px
-$font-size--2000: 1.2rem;  // 24px
-$font-size--1000: 1rem;    // 20px
-$font-size--800: .9rem;  // 19px
-$font-size--500: .8rem; // 16px
+$font-size--2000: 1.2rem; // 24px
+$font-size--1000: 1rem; // 20px
+$font-size--800: 0.9rem; // 19px
+$font-size--500: 0.8rem; // 16px
 
 // $font-size--7000:             3rem; // 48px
 // $font-size--6000:             2.25rem; // 36px
@@ -28,8 +28,8 @@ $font-size--500: .8rem; // 16px
 // $font-size--500:              .813rem; // 13px
 
 // Spacing
-$spacing--250: .25rem;
-$spacing--500: .5rem;
+$spacing--250: 0.25rem;
+$spacing--500: 0.5rem;
 $spacing--1000: 1rem;
 $spacing--1500: 1.5rem;
 $spacing--2000: 2rem;
@@ -46,7 +46,7 @@ $bp--2000: 1024px;
 $bp--3000: 1280px;
 
 // Misc Layout
-$radius--500: .5rem;
+$radius--500: 0.5rem;
 $radius--1000: 1rem;
 $radius--2000: 2rem;
 

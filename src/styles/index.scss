@@ -117,6 +117,14 @@ section {
 body {
   line-height: 1;
 }
+a {
+  color: $color--primary;
+  text-decoration: none;
+  &:hover {
+    color: lighten($color--primary, 12.5%);
+    text-decoration: underline;
+  }
+}
 ol,
 ul {
   list-style: none;

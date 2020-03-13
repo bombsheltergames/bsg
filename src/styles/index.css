@@ -124,6 +124,13 @@ section {
 body {
   line-height: 1; }
 
+a {
+  color: #4396ea;
+  text-decoration: none; }
+  a:hover {
+    color: #7cb6f0;
+    text-decoration: underline; }
+
 ol,
 ul {
   list-style: none; }

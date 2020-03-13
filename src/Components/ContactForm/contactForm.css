@@ -22,9 +22,9 @@
       .ContactForm-message a:hover {
         text-decoration: none; }
     .ContactForm-message--processing {
-      color: #1f6db6;
-      background-color: #dbeaf9;
-      border-color: #1f6db6; }
+      color: #4396ea;
+      background-color: white;
+      border-color: #4396ea; }
     .ContactForm-message--error {
       color: #ed0000;
       background-color: #ffeded;
