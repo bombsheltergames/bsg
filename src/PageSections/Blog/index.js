@@ -16,12 +16,12 @@ const preview = window.location.search.includes("preview");
 const publicSpreadsheetUrl =
   "https://docs.google.com/spreadsheets/d/1x1PaRIhNhrZl5IpRgv5SzbT3kNLERBu_i-uVjdVhwJo/edit#gid=0";
 
-export const initBlog = callback => {
+export const initBlog = (callback, postId) => {
   return Tabletop.init({
     key: publicSpreadsheetUrl,
     simpleSheet: true,
   }).then((data, tabletop) => {
-    const filteredData = data
+    let filteredData = data
       .filter(post =>
         preview ? post.status !== "HIDDEN" : post.status === "ACTIVE"
       )
@@ -32,6 +32,7 @@ export const initBlog = callback => {
 
 const Blog = props => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [activePosts, setActivePosts] = useState([]);
   const {
     posts,
     entriesToShow,
@@ -40,7 +41,8 @@ const Blog = props => {
     clipPosts,
     useSections,
   } = props;
-  let { page } = useParams();
+  let { page, postId } = useParams();
+
   page = Number(page);
 
   useEffect(() => {
@@ -49,16 +51,28 @@ const Blog = props => {
     }
   }, [page]);
 
-  if (posts.length < 1) {
+  useEffect(() => {
+    if (postId) {
+      const updatedPosts = [...posts].filter(post => {
+        return post.id === postId;
+      });
+      setActivePosts(updatedPosts);
+    } else {
+      setActivePosts(posts);
+    }
+  }, [posts, postId]);
+
+  if (activePosts.length < 1) {
     return <></>;
   }
 
   const start = (currentPage - 1) * entriesToShow;
   const end = currentPage * entriesToShow;
   const firstPage = currentPage === 1;
-  const lastPage = currentPage * entriesToShow > posts.length;
-  const displayViewAllLink = posts.length > entriesToShow && showViewAll;
-  const displayPagination = posts.length > entriesToShow && showPagination;
+  const lastPage = currentPage * entriesToShow > activePosts.length;
+  const displayViewAllLink = activePosts.length > entriesToShow && showViewAll;
+  const displayPagination =
+    activePosts.length > entriesToShow && showPagination;
 
   const prevLinkClasses = clsx([
     "Blog-pagination-link",
@@ -76,7 +90,7 @@ const Blog = props => {
   return (
     <div className="Blog">
       <div className="Blog-entries">
-        {posts.slice(start, end).map((post, i) => {
+        {activePosts.slice(start, end).map((post, i) => {
           if (useSections) {
             const useDividers = i % 2 === 1;
             return (
@@ -84,14 +98,27 @@ const Blog = props => {
                 topDivider={useDividers}
                 alt={useDividers}
                 bottomDivider={useDividers}
+                key={post.id}
               >
                 <MainContent>
-                  <BlogEntry post={post} key={i} clipPosts={clipPosts} />
+                  <BlogEntry
+                    post={post}
+                    link={!postId}
+                    clipPosts={clipPosts}
+                    key={i}
+                  />
                 </MainContent>
               </MainSection>
             );
           }
-          return <BlogEntry post={post} key={i} clipPosts={clipPosts} />;
+          return (
+            <BlogEntry
+              post={post}
+              link={!postId}
+              clipPosts={clipPosts}
+              key={i}
+            />
+          );
         })}
       </div>
       {displayPagination && (
@@ -104,7 +131,7 @@ const Blog = props => {
             {`< Prev`}
           </Link>
           <span>
-            Viewing {start + 1}-{end} of {posts.length}
+            Viewing {start + 1}-{end} of {activePosts.length}
           </span>
           <Link
             to={`/blog/${Number(currentPage) + 1}${preview ? "?preview" : ""}`}

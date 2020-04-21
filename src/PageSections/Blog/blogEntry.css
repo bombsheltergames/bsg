@@ -32,6 +32,8 @@
     .BlogEntry-body--clipped + .Button {
       display: block;
       margin: 0 auto; }
+  .BlogEntry-body h3 {
+    margin-top: 1.5rem; }
   .BlogEntry-body p {
     margin-top: 1rem; }
   .BlogEntry-body img {

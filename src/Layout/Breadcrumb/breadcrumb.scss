@@ -2,7 +2,18 @@
 @import "styles/global/vars";
 
 .Breadcrumb {
+  position: sticky;
+  z-index: 2;
+  top: 43px;
   background: $color--tertiary;
   padding: $spacing--250 $spacing--1500;
   font-size: $font-size--500;
+  @media screen and (min-width: $bp--1500) {
+    top: 82px;
+  }
+  .MainContent {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
