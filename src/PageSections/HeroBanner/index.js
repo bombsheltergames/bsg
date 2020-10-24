@@ -2,23 +2,15 @@ import React from "react";
 import Hero from "Components/Hero";
 import Button from "Components/Button";
 import Image from "Components/Image";
-// Hero Banner Images
-import dosHero from "data/images/hero/dos-hero.png";
-import dosHeroThumbnail from "data/images/hero/dos-hero.thumb.png";
-import dosLogoThumbnail from "data/images/logo/dos-tentacles-sm.png";
-import dosLogo from "data/images/logo/dos-tentacles.png";
+import dosLogo from "data/images/logo/dos-angler-logo.png";
 
 const TopSection = () => {
   return (
-    <Hero imageSrc={dosHero} placeholder={dosHeroThumbnail} fullscreen>
+    <Hero fullscreen>
       <h1 className="u-accessibleText">Depths of Sanity</h1>
-      <Image
-        src={dosLogo}
-        placeholder={dosLogoThumbnail}
-        alt="Depths of Sanity"
-      />
-      <Button type="ghost" size="large" href="#trailer">
-        Watch Trailer
+      <Image src={dosLogo} alt="Depths of Sanity" />
+      <Button type="ghost" size="large" href="/presskit">
+        Press Kit
       </Button>
       <Button
         type="ghost"
