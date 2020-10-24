@@ -1,5 +1,6 @@
 // Framework Imports
 import React from "react";
+import PropTypes from "prop-types";
 // Component Styles
 import "./footer.css";
 // Component Imports
@@ -9,11 +10,12 @@ import ContactInfo from "Components/ContactInfo";
 // Image Imports
 import footerImages from "data/footerImages";
 
-const FooterBar = () => {
+const Footer = props => {
+  const { showContactForm, showContactInfo } = props;
   return (
     <div className="Footer-wrapper">
-      <ContactForm />
-      <ContactInfo />
+      {showContactForm && <ContactForm />}
+      {showContactInfo && <ContactInfo />}
       <footer className="Footer">
         {footerImages && (
           <div className="Footer-imageWrap">
@@ -98,4 +100,13 @@ const FooterBar = () => {
   );
 };
 
-export default FooterBar;
+Footer.propTypes = {
+  showContactForm: PropTypes.bool,
+  showContactInfo: PropTypes.bool,
+};
+Footer.defaultProps = {
+  showContactForm: false,
+  showContactInfo: false,
+};
+
+export default Footer;

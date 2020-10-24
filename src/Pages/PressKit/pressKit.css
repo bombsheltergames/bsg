@@ -1,0 +1,88 @@
+.PressKit {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, #01264f 80%, #011226); }
+  .PressKit-hero {
+    width: 100%;
+    background: black;
+    text-align: center; }
+    .PressKit-hero img {
+      height: 380px; }
+  .PressKit-wrapper {
+    max-width: 1024px;
+    padding: 0 1.5rem 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .PressKit-wrapper {
+        margin: 1rem auto; }
+        .PressKit-wrapper::before, .PressKit-wrapper::after {
+          content: "";
+          display: block;
+          clear: both; } }
+  .PressKit-sidebar {
+    margin-top: 1rem;
+    padding-bottom: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .PressKit-sidebar {
+        width: 25%;
+        position: fixed;
+        top: 82px; } }
+    .PressKit-sidebar a {
+      display: block; }
+  @media screen and (min-width: 768px) {
+    .PressKit-main {
+      width: 70%;
+      float: right; } }
+  @media screen and (min-width: 768px) {
+    .PressKit-main-description {
+      display: flex; }
+      .PressKit-main-description aside {
+        width: 50%;
+        padding-right: 0.5rem; }
+      .PressKit-main-description div {
+        width: 50%; } }
+  .PressKit-main-description dt,
+  .PressKit-main-description dd {
+    display: block; }
+  .PressKit-main-description dt {
+    text-decoration: underline; }
+  .PressKit-main-description dd {
+    margin-bottom: 0.5rem; }
+  .PressKit-main section {
+    margin-bottom: 2rem; }
+  .PressKit-main p {
+    margin-bottom: 0.5rem; }
+  .PressKit-main p.noMargin {
+    margin: 0; }
+  .PressKit-main h3 {
+    margin-top: 1rem; }
+  .PressKit-main li {
+    list-style: disc;
+    margin-left: 1rem; }
+  .PressKit-awards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .PressKit-awards-pax {
+      width: 15%; }
+    .PressKit-awards-bfig {
+      width: 18%; }
+    .PressKit-awards-gameDaily {
+      width: 12%; }
+  .PressKit h1,
+  .PressKit h2,
+  .PressKit h3,
+  .PressKit h4 {
+    text-align: left; }
+  .PressKit h1,
+  .PressKit h2,
+  .PressKit h3 {
+    margin: 0.5rem 0; }
+    .PressKit h1 span,
+    .PressKit h2 span,
+    .PressKit h3 span {
+      padding-top: 82px; }
+  .PressKit h1,
+  .PressKit h2 {
+    text-transform: uppercase; }

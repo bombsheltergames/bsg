@@ -14,8 +14,14 @@
   .MainSection--alt {
     background: #011226;
     padding: 3rem 1.5rem; }
+    .MainSection--alt.MainSection--noPadding {
+      padding: 1.5rem 1rem; }
+    .MainSection--alt + .MainSection--alt {
+      margin-top: -2rem; }
   .MainSection--expanded {
     padding: 5rem 1.5rem; }
+  .MainSection--noPadding {
+    padding: 0 1rem; }
   .MainSection--fadeBg {
     background: linear-gradient(to bottom, #01264f, #01264f 50%, #011226); }
   .MainSection-headerImg, .MainSection-footerImg {

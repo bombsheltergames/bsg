@@ -1,0 +1,124 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+.PressKit {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    $color--secondary 80%,
+    $color--tertiary
+  );
+  &-hero {
+    width: 100%;
+    background: $color--black;
+    text-align: center;
+    img {
+      height: $bp--300;
+    }
+  }
+  &-wrapper {
+    max-width: $bp--2000;
+    padding: 0 $spacing--1500 $spacing--1500;
+    @media screen and (min-width: $bp--1500) {
+      margin: $spacing--1000 auto;
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+  }
+  &-sidebar {
+    margin-top: $spacing--1000;
+    padding-bottom: $spacing--1500;
+    @media screen and (min-width: $bp--1500) {
+      width: 25%;
+      position: fixed;
+      top: 82px;
+    }
+    a {
+      display: block;
+    }
+  }
+  &-main {
+    @media screen and (min-width: $bp--1500) {
+      width: 70%;
+      float: right;
+    }
+    &-description {
+      @media screen and (min-width: $bp--1500) {
+        display: flex;
+        aside {
+          width: 50%;
+          padding-right: $spacing--500;
+        }
+        div {
+          width: 50%;
+        }
+      }
+      dt,
+      dd {
+        display: block;
+      }
+      dt {
+        text-decoration: underline;
+      }
+      dd {
+        margin-bottom: $spacing--500;
+      }
+    }
+    section {
+      margin-bottom: $spacing--2000;
+    }
+    p {
+      margin-bottom: $spacing--500;
+    }
+    p.noMargin {
+      margin: 0;
+    }
+    h3 {
+      margin-top: $spacing--1000;
+    }
+    li {
+      list-style: disc;
+      margin-left: $spacing--1000;
+    }
+  }
+  &-awards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-pax {
+      width: 15%;
+    }
+    &-bfig {
+      width: 18%;
+    }
+    &-gameDaily {
+      width: 12%;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: left;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: $spacing--500 0;
+    span {
+      padding-top: 82px;
+    }
+  }
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+}

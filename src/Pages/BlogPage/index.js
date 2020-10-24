@@ -41,7 +41,7 @@ const BlogPage = () => {
       <Header />
       <Breadcrumb pages={pages} />
       <Blog useSections posts={blogPosts} entriesToShow={10} showPagination />
-      <Footer />
+      <Footer showContactForm showContactInfo />
     </div>
   );
 };
