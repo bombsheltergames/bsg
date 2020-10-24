@@ -138,7 +138,7 @@ const PressKit = () => {
                 autoplay
               />
             </MainSection>
-            <MainSection noPadding alt topDivider bottomDivider>
+            <MainSection noPadding>
               <h2>
                 <span id="images">Images</span>
               </h2>
@@ -152,6 +152,7 @@ const PressKit = () => {
               <h2>
                 <span id="logo">Logo &amp; Icon</span>
               </h2>
+              <p>[ To be added ]</p>
             </MainSection>
             <MainSection noPadding alt topDivider bottomDivider>
               <h2>
@@ -207,7 +208,7 @@ const PressKit = () => {
                 </a>
               </p>
             </MainSection>
-            <MainSection noPadding alt topDivider bottomDivider>
+            <MainSection noPadding>
               <h2>
                 <span id="credits">Credits</span>
               </h2>
