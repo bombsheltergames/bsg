@@ -64,10 +64,10 @@ class VideoTypingSection extends Component {
     return (
       <MainSection id="trailer" fadeBg bottomDivider>
         <Video
-          id="Z6SjXpgKkwg"
+          id="mTAg5vLwPsU"
           previewImage={dosVidPreview}
           placeholderImage={dosVidThumbnail}
-          title="Depths of Sanity PAX East 2020 Trailer"
+          title="Depths of Sanity - Early Access Launch Trailer"
           autoplay
         />
         <MainContent retroFont>

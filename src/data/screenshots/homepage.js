@@ -1,15 +1,15 @@
 // Screenshot Gallery Info
 // todo - hide image info until hover; see notes
-import screenshot01 from "./images/screenshots/dos/01.jpg";
-import screenshot02 from "./images/screenshots/dos/02.jpg";
-import screenshot03 from "./images/screenshots/dos/03.jpg";
-import screenshot04 from "./images/screenshots/dos/04.jpg";
-import screenshot05 from "./images/screenshots/dos/05.jpg";
-import screenshot06 from "./images/screenshots/dos/06.jpg";
-import screenshot07 from "./images/screenshots/dos/07.jpg";
-import screenshot08 from "./images/screenshots/dos/08.jpg";
-import screenshot09 from "./images/screenshots/dos/09.jpg";
-import screenshot10 from "./images/screenshots/dos/10.jpg";
+import screenshot01 from "../images/screenshots/homepage/01.jpg";
+import screenshot02 from "../images/screenshots/homepage/02.jpg";
+import screenshot03 from "../images/screenshots/homepage/03.jpg";
+import screenshot04 from "../images/screenshots/homepage/04.jpg";
+import screenshot05 from "../images/screenshots/homepage/05.jpg";
+import screenshot06 from "../images/screenshots/homepage/06.jpg";
+import screenshot07 from "../images/screenshots/homepage/07.jpg";
+import screenshot08 from "../images/screenshots/homepage/08.jpg";
+import screenshot09 from "../images/screenshots/homepage/09.jpg";
+import screenshot10 from "../images/screenshots/homepage/10.jpg";
 
 // Gallery also supports "title" and "description" attributes - text strings only. Example:
 /*

@@ -20,9 +20,18 @@
   &--alt {
     background: $color--tertiary;
     padding: $spacing--3000 $spacing--1500;
+    &.MainSection--noPadding {
+      padding: $spacing--1500 $spacing--1000;
+    }
+    & + & {
+      margin-top: -#{$spacing--2000};
+    }
   }
   &--expanded {
     padding: $spacing--5000 $spacing--1500;
+  }
+  &--noPadding {
+    padding: 0 $spacing--1000;
   }
   &--fadeBg {
     background: linear-gradient(

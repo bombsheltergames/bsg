@@ -14,8 +14,8 @@ import MainContent from "Layout/MainContent";
 import Blog, { initBlog } from "PageSections/Blog";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
-// Image Imports
-import footerImages from "data/footerImages";
+// External Data
+import screenshots from "data/screenshots/homepage";
 
 class Homepage extends Component {
   state = {
@@ -56,7 +56,7 @@ class Homepage extends Component {
             <Header />
             <VideoTyping />
             <Features />
-            <ScreenShotGallery />
+            <ScreenShotGallery screenshots={screenshots} />
             {/*
             Hiding the info about other games for now
             <MainSection>
@@ -79,7 +79,7 @@ class Homepage extends Component {
                 />
               </MainContent>
             </MainSection>
-            <Footer images={footerImages} />
+            <Footer showContactForm showContactInfo />
           </main>
         </div>
         <BackToTop
