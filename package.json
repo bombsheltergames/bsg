@@ -1,7 +1,7 @@
 {
   "name": "bsg",
   "version": "1.0.0",
-  "homepage": "http://bombsheltergames.github.io/",
+  "homepage": "https://bombsheltergames.com/",
   "private": true,
   "dependencies": {
     "ajv": "^6.10.2",
