@@ -16,7 +16,7 @@ import screenshot06 from "../images/screenshots/presskit/07.png";
     description: "Add informative description here! This should probably be a bunch of text explaining this screenshot. You basically have as much room as you want."
   }
 */
-const screenshots = [
+const pressKitScreenshots = [
   {
     thumbnail: screenshot01,
     src: screenshot01,
@@ -43,4 +43,4 @@ const screenshots = [
   },
 ];
 
-export default screenshots;
+export default pressKitScreenshots;

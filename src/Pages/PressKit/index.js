@@ -16,8 +16,9 @@ import bfig from "data/images/awards/bfig-2018.png";
 import gameDaily from "data/images/awards/game-daily-2019.png";
 import pax2018 from "data/images/awards/pax-rising-2018.png";
 import pax2019 from "data/images/awards/pax-rising-2019.png";
-// External Data
+// Image Data
 import pressKitScreenshots from "data/screenshots/presskit";
+import pressKitLogos from "data/pressKitLogos";
 
 const PressKit = () => {
   return (
@@ -152,6 +153,11 @@ const PressKit = () => {
               <h2>
                 <span id="logo">Logo &amp; Icon</span>
               </h2>
+              <ImageGallery
+                images={pressKitLogos}
+                maxItemWidth="45%"
+                showModal
+              />
             </MainSection>
             <MainSection noPadding alt topDivider bottomDivider>
               <h2>
@@ -207,7 +213,7 @@ const PressKit = () => {
                 </a>
               </p>
             </MainSection>
-            <MainSection noPadding alt topDivider bottomDivider>
+            <MainSection noPadding>
               <h2>
                 <span id="credits">Credits</span>
               </h2>

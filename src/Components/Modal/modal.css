@@ -40,6 +40,10 @@
     padding: 1rem 2rem; }
     .Modal--image .Modal-inner-description h3 + p {
       margin-top: 0.5rem; }
+  .Modal--image .Modal-inner .Image {
+    max-height: 80vh;
+    max-width: 100%;
+    width: auto; }
   .Modal--content .Modal-inner {
     overflow: auto;
     background: white;

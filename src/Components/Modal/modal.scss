@@ -55,6 +55,11 @@
             margin-top: $spacing--500;
           }
         }
+        .Image {
+          max-height: 80vh;
+          max-width: 100%;
+          width: auto;
+        }
       }
     }
   }

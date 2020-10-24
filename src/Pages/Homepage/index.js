@@ -14,7 +14,7 @@ import MainContent from "Layout/MainContent";
 import Blog, { initBlog } from "PageSections/Blog";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
-// External Data
+// Image Data
 import screenshots from "data/screenshots/homepage";
 
 class Homepage extends Component {
