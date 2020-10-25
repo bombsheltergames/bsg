@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c14da7016560778f0f58e9f5264b22a",
+    "revision": "593090b0b1d67eab183fa0c8eb355f87",
     "url": "/index.html"
   },
   {
-    "revision": "f7e0c54e4916ada7ea20",
-    "url": "/static/css/main.e902c5df.chunk.css"
+    "revision": "74add0c2aab9dd8033a8",
+    "url": "/static/css/main.8b02dd2a.chunk.css"
   },
   {
-    "revision": "8a2ef9d03297a3208651",
-    "url": "/static/js/2.2520e341.chunk.js"
+    "revision": "af9693d6d37d4ec5930d",
+    "url": "/static/js/2.85891a84.chunk.js"
   },
   {
     "revision": "92484bacea29b89e0b78818f906ec821",
-    "url": "/static/js/2.2520e341.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.85891a84.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f7e0c54e4916ada7ea20",
-    "url": "/static/js/main.f6b1da64.chunk.js"
+    "revision": "74add0c2aab9dd8033a8",
+    "url": "/static/js/main.612b9ce2.chunk.js"
   },
   {
     "revision": "967b134b9413d18d9c95",
@@ -96,20 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dos-angler-logo.e384aa6e.png"
   },
   {
-    "revision": "fc3f5bad6e465c20aaf8bbfa7e2c8f02",
-    "url": "/static/media/dos-hero.fc3f5bad.png"
-  },
-  {
     "revision": "5ec05d3aac2349a4fd4bc4d573fbe4f5",
     "url": "/static/media/dos-previewImage.5ec05d3a.jpg"
   },
   {
-    "revision": "d20e8fbe3629bc0ebf830eea09d3e58e",
-    "url": "/static/media/dos-tentacles-sm.d20e8fbe.png"
-  },
-  {
-    "revision": "f34300565156a13d745b13f5213bead6",
-    "url": "/static/media/dos-tentacles.f3430056.png"
+    "revision": "dacd9da3e80ae4e76dcf60de1f3fac27",
+    "url": "/static/media/dos-tentacles-2020.dacd9da3.png"
   },
   {
     "revision": "57a80cf77d0b5c8394894d3aafc152b6",
