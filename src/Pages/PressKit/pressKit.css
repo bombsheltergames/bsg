@@ -4,68 +4,69 @@
   max-width: 100%;
   z-index: 2;
   background: linear-gradient(to bottom, #01264f 80%, #011226); }
+  .PressKit .MainSection::before, .PressKit .MainSection::after {
+    content: "";
+    display: block;
+    clear: both; }
   .PressKit-hero {
     background: black;
-    margin: 0 1rem;
+    margin: 1rem 1rem 0;
     text-align: center; }
     .PressKit-hero img {
       max-height: 380px; }
     @media screen and (min-width: 768px) {
       .PressKit-hero {
-        margin: 0;
+        margin: 1.5rem 0 0;
         width: 100%; } }
-  .PressKit-wrapper {
-    max-width: 1024px; }
-    @media screen and (min-width: 768px) {
-      .PressKit-wrapper {
-        padding: 0 1.5rem 1.5rem;
-        margin: 1rem auto; }
-        .PressKit-wrapper::before, .PressKit-wrapper::after {
-          content: "";
-          display: block;
-          clear: both; } }
   .PressKit-sidebar {
     padding: 0 1rem 1.5rem;
     margin-top: 1rem; }
     @media screen and (min-width: 768px) {
       .PressKit-sidebar {
-        padding: 0 0 1.5rem;
-        width: 25%;
+        width: 21%;
         position: fixed;
-        top: 82px; } }
+        top: 82px;
+        z-index: 2; } }
     .PressKit-sidebar a {
       display: block; }
+    .PressKit .PressKit-sidebar h1 {
+      margin-top: 0; }
+  .PressKit-wrapper {
+    max-width: 1024px;
+    margin: auto; }
   @media screen and (min-width: 768px) {
-    .PressKit-main {
+    .PressKit-section {
       width: 70%;
       float: right; } }
-  .PressKit-main-description {
-    padding: 0 1rem; }
-    @media screen and (min-width: 768px) {
-      .PressKit-main-description {
-        padding: 0;
-        display: flex; }
-        .PressKit-main-description aside {
-          width: 50%;
-          padding-right: 0.5rem; }
-        .PressKit-main-description div {
-          width: 50%; } }
-    .PressKit-main-description dt,
-    .PressKit-main-description dd {
+  .PressKit-section-description {
+    padding: 0.5rem 1rem; }
+    .PressKit-section-description aside {
+      padding-bottom: 1rem; }
+    .PressKit-section-description dt,
+    .PressKit-section-description dd {
       display: block; }
-    .PressKit-main-description dt {
+    .PressKit-section-description dt {
       text-decoration: underline; }
-    .PressKit-main-description dd {
+    .PressKit-section-description dd {
       margin-bottom: 0.5rem; }
-  .PressKit-main section {
+    @media screen and (min-width: 768px) {
+      .PressKit-section-description {
+        padding: 1rem 0;
+        display: flex; }
+        .PressKit-section-description aside {
+          width: 50%;
+          padding: 0 0 0.5rem 0; }
+        .PressKit-section-description div {
+          width: 50%; } }
+  .PressKit-section section {
     margin-bottom: 2rem; }
-  .PressKit-main p {
+  .PressKit-section p {
     margin-bottom: 0.5rem; }
-  .PressKit-main p.noMargin {
+  .PressKit-section p.noMargin {
     margin: 0; }
-  .PressKit-main h3 {
+  .PressKit-section h3 {
     margin-top: 1rem; }
-  .PressKit-main li {
+  .PressKit-section li {
     list-style: disc;
     margin-left: 1rem; }
   .PressKit-awards {

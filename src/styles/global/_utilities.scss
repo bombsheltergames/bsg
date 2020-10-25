@@ -19,3 +19,11 @@
 .u-fadeIn {
   opacity: 1;
 }
+.u-clearFix {
+  &::after,
+  &::before {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

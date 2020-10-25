@@ -16,6 +16,11 @@
 .u-fadeIn {
   opacity: 1; }
 
+.u-clearFix::after, .u-clearFix::before {
+  clear: both;
+  content: "";
+  display: block; }
+
 html,
 body,
 div,
