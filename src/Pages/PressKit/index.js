@@ -14,7 +14,7 @@ import dosVidPreview from "data/images/video/dos-previewImage.jpg";
 import dosVidThumbnail from "data/images/video/dos-previewImage.thumb.png";
 import bfig from "data/images/awards/bfig-2018.png";
 import gameDaily from "data/images/awards/game-daily-2019.png";
-import pax2018 from "data/images/awards/pax-rising-2018.png";
+import dreamhack from "data/images/awards/dreamhack-2019.png";
 import pax2019 from "data/images/awards/pax-rising-2019.png";
 // Image Data
 import pressKitScreenshots from "data/screenshots/presskit";
@@ -180,15 +180,24 @@ const PressKit = () => {
               <span id="awards">Awards &amp; Accolades</span>
             </h2>
             <p className="PressKit-awards">
+              <img src={bfig} className="PressKit-awards-bfig" alt="" />
+              <img
+                src={dreamhack}
+                className="PressKit-awards-dreamhack"
+                alt=""
+              />
+              <img src={pax2019} className="PressKit-awards-pax" alt="" />
               <img
                 src={gameDaily}
                 className="PressKit-awards-gameDaily"
                 alt=""
               />
-              <img src={pax2018} className="PressKit-awards-pax" alt="" />
-              <img src={pax2019} className="PressKit-awards-pax" alt="" />
-              <img src={bfig} className="PressKit-awards-bfig" alt="" />
             </p>
+            <p>
+              &ldquo;Most Compelling Game Mechanics&rdquo; - Boston Festival of
+              Indie Games (2018)
+            </p>
+            <p>&ldquo;Best Adventure Game&rdquo; - Dreamhack Dallas (2019)</p>
             <p>
               &ldquo;PAX Rising Official Selection&rdquo; - PAX East (2019,
               2018)
@@ -196,10 +205,6 @@ const PressKit = () => {
             <p>
               &ldquo;Best Game Audio&rdquo; Nominee - GameDaily Connect London
               (2019)
-            </p>
-            <p>
-              &ldquo;Most Compelling Game Mechanics&rdquo; - Boston Festival of
-              Indie Games (2018)
             </p>
           </div>
         </div>
