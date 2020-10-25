@@ -14,13 +14,14 @@ import MainContent from "Layout/MainContent";
 import Blog, { initBlog } from "PageSections/Blog";
 import Footer from "Layout/Footer";
 import BackToTop from "Components/BackToTop";
-// External Data
+// Image Data
 import screenshots from "data/screenshots/homepage";
 
 class Homepage extends Component {
   state = {
     blogPosts: [],
     showBackToTop: false,
+    spinLogo: false,
   };
   componentDidMount() {
     if (this.state.blogPosts.length === 0) {
@@ -37,7 +38,12 @@ class Homepage extends Component {
   handleScroll = throttle(() => {
     const shouldShow = window.scrollY > window.innerHeight / 2;
     if (this.state.showBackToTop !== shouldShow) {
-      this.setState({ showBackToTop: shouldShow });
+      this.setState({ showBackToTop: shouldShow, spinLogo: false });
+    }
+    if (window.scrollY > 0 && !shouldShow) {
+      this.setState({ spinLogo: true });
+    } else if (window.scrollY === 0) {
+      this.setState({ spinLogo: false });
     }
   }, 200);
   // This will store our posts so we can present them later
@@ -47,13 +53,13 @@ class Homepage extends Component {
 
   // And here's the actual content
   render() {
-    const { blogPosts, showBackToTop } = this.state;
+    const { blogPosts, showBackToTop, spinLogo } = this.state;
     return (
       <>
         <div className="Main">
           <HeroBanner />
           <main className="Main-content">
-            <Header />
+            <Header spinLogo={spinLogo} />
             <VideoTyping />
             <Features />
             <ScreenShotGallery screenshots={screenshots} />

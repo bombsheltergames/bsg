@@ -20,19 +20,17 @@
       display: block;
       margin: auto;
       max-width: 500px;
-      width: 100%;
-      margin-bottom: 1rem; }
+      width: 100%; }
       @media screen and (max-width: 768px) and (orientation: landscape) {
         .Hero-content .Image,
         .Hero-content .Image-wrap {
           max-width: 40vw;
           max-height: 40vh; } }
     .Hero-content .Button {
-      margin: 0.25rem; }
+      margin: 0 auto 1rem; }
       @media screen and (max-width: 768px) {
         .Hero-content .Button {
           display: block;
-          margin: 0 auto 1rem;
           max-width: 320px; } }
   .Hero--fullscreen {
     height: calc(100vh - 41px); }

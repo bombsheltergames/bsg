@@ -13,14 +13,17 @@
       background-color: #1770ca;
       border-color: #1770ca;
       color: white; }
-  .Button-color--ghost {
+  .Button-color--ghost, .Button-color--ghost-white {
     background-color: transparent;
     border-color: white;
     color: white; }
-    .Button-color--ghost:hover, .Button-color--ghost:focus, .Button-color--ghost:active {
-      background-color: #4396ea;
-      border-color: #4396ea;
-      color: white; }
+  .Button-color--ghost:hover, .Button-color--ghost:focus, .Button-color--ghost:active {
+    background-color: #4396ea;
+    border-color: #4396ea;
+    color: white; }
+  .Button-color--ghost-white:hover {
+    background-color: white;
+    color: black; }
   .Button-size--small {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;

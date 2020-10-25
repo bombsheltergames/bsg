@@ -34,20 +34,22 @@ const Features = () => (
         </li>
         <li>
           <img src={pickupsIcon} alt="" />
-          <h4 className="u-retroFont">Search, Scavenge, Survive</h4>
+          <h4 className="u-retroFont">Search, Scavenge, Stay Alive</h4>
           <p>
-            Discover advanced weaponry to help you tackle new threats, and
-            attachments that unlock new traversal options, including rock
-            drills, tow lines, sonar, and more.
+            Danger comes from every angle. Unlock a wide variety of weapons to
+            help you battle monstrous bosses, survive tense set-pieces, and
+            uncover secrets that expand the story and your chances of survival.
           </p>
         </li>
         <li>
           <img src={shipIcon} alt="" />
           <h4 className="u-retroFont">Danger from Every Angle</h4>
           <p>
-            With 360 degrees of movement, you're never safe in this adventure.
-            Battle monstrous bosses, survive tense set-pieces, and uncover
-            secrets that expand the story with your arsenal.
+            With full 360 degree movement, there are no double jumps or wall
+            runs to help you under the ocean. Use a wide range of unique tools
+            to uncover your environment, including tow lines that help you pull
+            through heavy currents, and a sonar system that helps you navigate
+            through pitch black darkness
           </p>
         </li>
       </ul>

@@ -21,7 +21,7 @@
     background: $color--tertiary;
     padding: $spacing--3000 $spacing--1500;
     &.MainSection--noPadding {
-      padding: $spacing--1500 $spacing--1000;
+      padding: $spacing--2000 $spacing--1000;
     }
     & + & {
       margin-top: -#{$spacing--2000};

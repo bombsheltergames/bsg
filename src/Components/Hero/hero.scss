@@ -25,17 +25,15 @@
       margin: auto;
       max-width: 500px;
       width: 100%;
-      margin-bottom: $spacing--1000;
       @media screen and (max-width: $bp--1500) and (orientation: landscape) {
         max-width: 40vw;
         max-height: 40vh;
       }
     }
     .Button {
-      margin: $spacing--250;
+      margin: 0 auto $spacing--1000;
       @media screen and (max-width: $bp--1500) {
         display: block;
-        margin: 0 auto $spacing--1000;
         max-width: $bp--200;
       }
     }

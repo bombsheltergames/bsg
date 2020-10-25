@@ -6,9 +6,9 @@
   transition: color 0.5s, fill 0.5s; }
   .Logo-bomb-warning {
     transform-origin: 9.9057% 50%; }
-  .Logo:hover, .Logo:focus, .Logo:active {
+  .Logo--spin, .Logo:hover, .Logo:focus, .Logo:active {
     color: #ffc000; }
-    .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
+    .Logo--spin .Logo-bomb-warning, .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
       animation: spin 1.5s infinite linear; }
 
 @keyframes spin {
