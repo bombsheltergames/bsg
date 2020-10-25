@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "975e33a6f2cf01c1fd290df967b2c02b",
+    "revision": "4281bf341bcc4900d41f24043a83d4e1",
     "url": "/index.html"
   },
   {
-    "revision": "ce7b324e8493134778f1",
-    "url": "/static/css/main.211f1281.chunk.css"
+    "revision": "56daf1cb1f8df79ad902",
+    "url": "/static/css/main.bd216d23.chunk.css"
   },
   {
     "revision": "af9693d6d37d4ec5930d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.85891a84.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce7b324e8493134778f1",
-    "url": "/static/js/main.145181e4.chunk.js"
+    "revision": "56daf1cb1f8df79ad902",
+    "url": "/static/js/main.b4de36a5.chunk.js"
   },
   {
     "revision": "967b134b9413d18d9c95",
@@ -104,6 +104,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dos-tentacles-2020.dacd9da3.png"
   },
   {
+    "revision": "6bc3d1d49a4e88b3e645e7753f300ba6",
+    "url": "/static/media/dreamhack-2019.6bc3d1d4.png"
+  },
+  {
     "revision": "57a80cf77d0b5c8394894d3aafc152b6",
     "url": "/static/media/game-daily-2019.57a80cf7.png"
   },
@@ -114,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "632304a43cfb1875d8b7c8fb6020c790",
     "url": "/static/media/page-foreground.632304a4.png"
-  },
-  {
-    "revision": "c89b28c74e7893eb8eac9399d00e9164",
-    "url": "/static/media/pax-rising-2018.c89b28c7.png"
   },
   {
     "revision": "82e8eaab6f52598434d5b3fff60896e3",

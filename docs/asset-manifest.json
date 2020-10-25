@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.211f1281.chunk.css",
-    "main.js": "/static/js/main.145181e4.chunk.js",
-    "main.js.map": "/static/js/main.145181e4.chunk.js.map",
+    "main.css": "/static/css/main.bd216d23.chunk.css",
+    "main.js": "/static/js/main.b4de36a5.chunk.js",
+    "main.js.map": "/static/js/main.b4de36a5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71eeb3b7.js",
     "runtime-main.js.map": "/static/js/runtime-main.71eeb3b7.js.map",
     "static/js/2.85891a84.chunk.js": "/static/js/2.85891a84.chunk.js",
     "static/js/2.85891a84.chunk.js.map": "/static/js/2.85891a84.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8e67be7ac73ab34798c7cdd676d04c02.js": "/precache-manifest.8e67be7ac73ab34798c7cdd676d04c02.js",
+    "precache-manifest.ffabdce418d41682a2f2311ad82a7170.js": "/precache-manifest.ffabdce418d41682a2f2311ad82a7170.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.211f1281.chunk.css.map": "/static/css/main.211f1281.chunk.css.map",
+    "static/css/main.bd216d23.chunk.css.map": "/static/css/main.bd216d23.chunk.css.map",
     "static/js/2.85891a84.chunk.js.LICENSE.txt": "/static/js/2.85891a84.chunk.js.LICENSE.txt",
     "static/media/01.jpg": "/static/media/01.df90a634.jpg",
     "static/media/02.png": "/static/media/02.a0e0dabb.png",
@@ -31,10 +31,10 @@
     "static/media/dos-angler-logo.png": "/static/media/dos-angler-logo.e384aa6e.png",
     "static/media/dos-previewImage.jpg": "/static/media/dos-previewImage.5ec05d3a.jpg",
     "static/media/dos-tentacles-2020.png": "/static/media/dos-tentacles-2020.dacd9da3.png",
+    "static/media/dreamhack-2019.png": "/static/media/dreamhack-2019.6bc3d1d4.png",
     "static/media/game-daily-2019.png": "/static/media/game-daily-2019.57a80cf7.png",
     "static/media/page-background.png": "/static/media/page-background.5049755a.png",
     "static/media/page-foreground.png": "/static/media/page-foreground.632304a4.png",
-    "static/media/pax-rising-2018.png": "/static/media/pax-rising-2018.c89b28c7.png",
     "static/media/pax-rising-2019.png": "/static/media/pax-rising-2019.82e8eaab.png",
     "static/media/play-btn.svg": "/static/media/play-btn.7cdf700f.svg",
     "static/media/sonar.gif": "/static/media/sonar.464f3388.gif"
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.71eeb3b7.js",
     "static/js/2.85891a84.chunk.js",
-    "static/css/main.211f1281.chunk.css",
-    "static/js/main.145181e4.chunk.js"
+    "static/css/main.bd216d23.chunk.css",
+    "static/js/main.b4de36a5.chunk.js"
   ]
 }
