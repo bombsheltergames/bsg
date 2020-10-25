@@ -36,7 +36,7 @@ class Homepage extends Component {
   // This is where we make the comparison and update state if we actually want to show the Back to Top button
   // Throttling so we're not calling it on every single scroll event, and firing 1000s of calls to this function
   handleScroll = throttle(() => {
-    const shouldShow = window.scrollY > window.innerHeight / 2;
+    const shouldShow = window.scrollY > window.innerHeight;
     if (this.state.showBackToTop !== shouldShow) {
       this.setState({ showBackToTop: shouldShow, spinLogo: false });
     }

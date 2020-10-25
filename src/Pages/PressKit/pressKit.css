@@ -5,26 +5,31 @@
   z-index: 2;
   background: linear-gradient(to bottom, #01264f 80%, #011226); }
   .PressKit-hero {
-    width: 100%;
     background: black;
+    margin: 0 1rem;
     text-align: center; }
     .PressKit-hero img {
-      height: 380px; }
+      max-height: 380px; }
+    @media screen and (min-width: 768px) {
+      .PressKit-hero {
+        margin: 0;
+        width: 100%; } }
   .PressKit-wrapper {
-    max-width: 1024px;
-    padding: 0 1.5rem 1.5rem; }
+    max-width: 1024px; }
     @media screen and (min-width: 768px) {
       .PressKit-wrapper {
+        padding: 0 1.5rem 1.5rem;
         margin: 1rem auto; }
         .PressKit-wrapper::before, .PressKit-wrapper::after {
           content: "";
           display: block;
           clear: both; } }
   .PressKit-sidebar {
-    margin-top: 1rem;
-    padding-bottom: 1.5rem; }
+    padding: 0 1rem 1.5rem;
+    margin-top: 1rem; }
     @media screen and (min-width: 768px) {
       .PressKit-sidebar {
+        padding: 0 0 1.5rem;
         width: 25%;
         position: fixed;
         top: 82px; } }
@@ -34,21 +39,24 @@
     .PressKit-main {
       width: 70%;
       float: right; } }
-  @media screen and (min-width: 768px) {
-    .PressKit-main-description {
-      display: flex; }
-      .PressKit-main-description aside {
-        width: 50%;
-        padding-right: 0.5rem; }
-      .PressKit-main-description div {
-        width: 50%; } }
-  .PressKit-main-description dt,
-  .PressKit-main-description dd {
-    display: block; }
-  .PressKit-main-description dt {
-    text-decoration: underline; }
-  .PressKit-main-description dd {
-    margin-bottom: 0.5rem; }
+  .PressKit-main-description {
+    padding: 0 1rem; }
+    @media screen and (min-width: 768px) {
+      .PressKit-main-description {
+        padding: 0;
+        display: flex; }
+        .PressKit-main-description aside {
+          width: 50%;
+          padding-right: 0.5rem; }
+        .PressKit-main-description div {
+          width: 50%; } }
+    .PressKit-main-description dt,
+    .PressKit-main-description dd {
+      display: block; }
+    .PressKit-main-description dt {
+      text-decoration: underline; }
+    .PressKit-main-description dd {
+      margin-bottom: 0.5rem; }
   .PressKit-main section {
     margin-bottom: 2rem; }
   .PressKit-main p {

@@ -64,7 +64,10 @@
           transition: color 0.3s; }
   .Footer-image, .Footer-imageWrap {
     position: absolute;
-    bottom: 1.3%; }
+    bottom: 40px; }
+    @media screen and (min-width: 480px) {
+      .Footer-image, .Footer-imageWrap {
+        bottom: 20px; } }
   .Footer-imageWrap {
     z-index: -1;
     left: 0;

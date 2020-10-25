@@ -13,17 +13,21 @@
     $color--tertiary
   );
   &-hero {
-    width: 100%;
     background: $color--black;
+    margin: 0 $spacing--1000;
     text-align: center;
     img {
-      height: $bp--300;
+      max-height: $bp--300;
+    }
+    @media screen and (min-width: $bp--1500) {
+      margin: 0;
+      width: 100%;
     }
   }
   &-wrapper {
     max-width: $bp--2000;
-    padding: 0 $spacing--1500 $spacing--1500;
     @media screen and (min-width: $bp--1500) {
+      padding: 0 $spacing--1500 $spacing--1500;
       margin: $spacing--1000 auto;
       &::before,
       &::after {
@@ -34,9 +38,10 @@
     }
   }
   &-sidebar {
+    padding: 0 $spacing--1000 $spacing--1500;
     margin-top: $spacing--1000;
-    padding-bottom: $spacing--1500;
     @media screen and (min-width: $bp--1500) {
+      padding: 0 0 $spacing--1500;
       width: 25%;
       position: fixed;
       top: 82px;
@@ -51,7 +56,9 @@
       float: right;
     }
     &-description {
+      padding: 0 $spacing--1000;
       @media screen and (min-width: $bp--1500) {
+        padding: 0;
         display: flex;
         aside {
           width: 50%;
