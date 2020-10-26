@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.bd216d23.chunk.css",
-    "main.js": "/static/js/main.b4de36a5.chunk.js",
-    "main.js.map": "/static/js/main.b4de36a5.chunk.js.map",
+    "main.js": "/static/js/main.cd88fb94.chunk.js",
+    "main.js.map": "/static/js/main.cd88fb94.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71eeb3b7.js",
     "runtime-main.js.map": "/static/js/runtime-main.71eeb3b7.js.map",
-    "static/js/2.85891a84.chunk.js": "/static/js/2.85891a84.chunk.js",
-    "static/js/2.85891a84.chunk.js.map": "/static/js/2.85891a84.chunk.js.map",
+    "static/js/2.e61df3aa.chunk.js": "/static/js/2.e61df3aa.chunk.js",
+    "static/js/2.e61df3aa.chunk.js.map": "/static/js/2.e61df3aa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ffabdce418d41682a2f2311ad82a7170.js": "/precache-manifest.ffabdce418d41682a2f2311ad82a7170.js",
+    "precache-manifest.9a4ecc22334aed7f659b65913ac66169.js": "/precache-manifest.9a4ecc22334aed7f659b65913ac66169.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.bd216d23.chunk.css.map": "/static/css/main.bd216d23.chunk.css.map",
-    "static/js/2.85891a84.chunk.js.LICENSE.txt": "/static/js/2.85891a84.chunk.js.LICENSE.txt",
+    "static/js/2.e61df3aa.chunk.js.LICENSE.txt": "/static/js/2.e61df3aa.chunk.js.LICENSE.txt",
     "static/media/01.jpg": "/static/media/01.df90a634.jpg",
     "static/media/02.png": "/static/media/02.a0e0dabb.png",
     "static/media/02.jpg": "/static/media/02.bcff39b2.jpg",
@@ -23,10 +23,6 @@
     "static/media/05.png": "/static/media/05.fe7b5fea.png",
     "static/media/06.jpg": "/static/media/06.f3fa9535.jpg",
     "static/media/07.png": "/static/media/07.31f65f92.png",
-    "static/media/07.jpg": "/static/media/07.ed174c71.jpg",
-    "static/media/08.jpg": "/static/media/08.4dc0cd4f.jpg",
-    "static/media/09.jpg": "/static/media/09.f37a7a8f.jpg",
-    "static/media/10.jpg": "/static/media/10.20ccf187.jpg",
     "static/media/bfig-2018.png": "/static/media/bfig-2018.5f849dff.png",
     "static/media/dos-angler-logo.png": "/static/media/dos-angler-logo.e384aa6e.png",
     "static/media/dos-previewImage.jpg": "/static/media/dos-previewImage.5ec05d3a.jpg",
@@ -41,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.71eeb3b7.js",
-    "static/js/2.85891a84.chunk.js",
+    "static/js/2.e61df3aa.chunk.js",
     "static/css/main.bd216d23.chunk.css",
-    "static/js/main.b4de36a5.chunk.js"
+    "static/js/main.cd88fb94.chunk.js"
   ]
 }
