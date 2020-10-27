@@ -1,7 +1,5 @@
 // Framework Imports
 import React from "react";
-// Component Imports
-import Button from "Components/Button";
 // Style Imports
 import "./contactInfo.css";
 
