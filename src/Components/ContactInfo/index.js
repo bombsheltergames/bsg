@@ -15,13 +15,6 @@ const ContactInfo = () => {
       <p>
         <strong>Press Inquiries:</strong> press[at]bombsheltergames[dot]com
       </p>
-      <Button
-        type="ghost"
-        href="https://bombsheltergamescom.ipage.com/DoSPressKit_2020-02.zip"
-        download
-      >
-        Download Press Kit
-      </Button>
     </div>
   );
 };
