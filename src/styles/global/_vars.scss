@@ -4,9 +4,11 @@
 $color--primary: #4396ea;
 $color--secondary: #01264f;
 $color--tertiary: #011226;
+$color--light: #c2d7ea;
 $color--error: #ed0000;
 $color--success: #138800;
 $color--black: black;
+$color--gray: #c0c0c0;
 $color--white: white;
 
 // Fonts
@@ -17,6 +19,7 @@ $font-size--2000: 1.2rem; // 24px
 $font-size--1000: 1rem; // 20px
 $font-size--800: 0.9rem; // 19px
 $font-size--500: 0.8rem; // 16px
+$font-size--300: 0.7rem; // 14px
 
 // $font-size--7000:             3rem; // 48px
 // $font-size--6000:             2.25rem; // 36px
@@ -28,6 +31,7 @@ $font-size--500: 0.8rem; // 16px
 // $font-size--500:              .813rem; // 13px
 
 // Spacing
+$spacing--100: 0.1rem;
 $spacing--250: 0.25rem;
 $spacing--500: 0.5rem;
 $spacing--1000: 1rem;
@@ -47,6 +51,7 @@ $bp--2000: 1024px;
 $bp--3000: 1280px;
 
 // Misc Layout
+$radius--250: 0.25rem;
 $radius--500: 0.5rem;
 $radius--1000: 1rem;
 $radius--2000: 2rem;

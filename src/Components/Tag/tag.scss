@@ -1,0 +1,11 @@
+@import 'styles/global/vars';
+
+.Tag {
+  background: $color--light;
+  border-radius: $radius--250;
+  color: $color--tertiary;
+  display: inline-block;
+  font-size: $font-size--300;
+  padding: $spacing--100 $spacing--500 ($spacing--100 + 0.1rem) $spacing--500;
+  margin: 0 $spacing--250 $spacing--500 0;
+}

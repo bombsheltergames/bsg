@@ -1,14 +1,15 @@
 // Framework Imports
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 // Component Styles
-import "./footer.css";
+import './footer.css';
 // Component Imports
-import Image from "Components/Image";
-import ContactForm from "Components/ContactForm";
-import ContactInfo from "Components/ContactInfo";
+import Scripts from 'Layout/Scripts';
+import Image from 'Components/Image';
+import ContactForm from 'Components/ContactForm';
+import ContactInfo from 'Components/ContactInfo';
 // Image Imports
-import footerImages from "data/footerImages";
+import footerImages from 'data/footerImages';
 
 const Footer = props => {
   const { showContactForm, showContactInfo } = props;
@@ -96,6 +97,7 @@ const Footer = props => {
           </span>
         </div>
       </footer>
+      <Scripts />
     </div>
   );
 };
