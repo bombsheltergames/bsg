@@ -57,8 +57,8 @@ const PressKit = () => {
                 <dd>
                   <p className="noMargin">Steam Early Access</p>
                   <p>Oct 30, 2020</p>
-                  <p className="noMargin">PC/Switch/Xbox/PS4</p>
-                  <p>2021</p>
+                  <p className="noMargin">PC/Switch/Xbox</p>
+                  <p>2022</p>
                 </dd>
                 <dt>Website:</dt>
                 <dd>Bombsheltergames.com</dd>
