@@ -10,8 +10,8 @@ import ImageGallery from 'Components/ImageGallery';
 import MainSection from 'Layout/MainSection';
 // Image Imports
 import dosLogo from 'data/images/logo/dos-angler-logo.png';
-import dosVidPreview from 'data/images/video/dos-previewImage.jpg';
-import dosVidThumbnail from 'data/images/video/dos-previewImage.thumb.png';
+import dosVidPreview from 'data/images/video/dos-trailer.png';
+import dosVidThumbnail from 'data/images/video/dos-trailer.thumb.jpg';
 import bfig from 'data/images/awards/bfig-2018.png';
 import gameDaily from 'data/images/awards/game-daily-2019.png';
 import dreamhack from 'data/images/awards/dreamhack-2019.png';
