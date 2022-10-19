@@ -96,10 +96,10 @@ const PressKit = () => {
               <li>
                 <h4>Danger from Every Angle:</h4>
                 <p>
-                  With full 360-degree movement, there are no double jumpsor
-                  wall runs to help you under the ocean. Use a wide rangeof
+                  With full 360-degree movement, there are no double jumps or
+                  wall runs to help you under the ocean. Use a wide range of
                   unique tools to uncover your environment, including tow lines
-                  that help you pull through heavy currents, and a sonarsystem
+                  that help you pull through heavy currents, and a sonar system
                   that helps you navigate through pitch black darkness.
                 </p>
               </li>
@@ -115,7 +115,7 @@ const PressKit = () => {
               <li>
                 <h4>Deep, Involving Storyline:</h4>
                 <p>
-                  Discover the fate of each crew member of The Baronessand
+                  Discover the fate of each crew member of The Baroness and
                   uncover the mystery of the signal coming from the ocean floor.
                 </p>
               </li>
