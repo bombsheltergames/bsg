@@ -1,24 +1,24 @@
 // Framework Imports
-import React from "react";
+import React from 'react';
 // Style Imports
-import "./pressKit.css";
+import './pressKit.css';
 // Component Imports
-import Header from "Layout/Header";
-import Footer from "Layout/Footer";
-import Video from "Components/Video";
-import ImageGallery from "Components/ImageGallery";
-import MainSection from "Layout/MainSection";
+import Header from 'Layout/Header';
+import Footer from 'Layout/Footer';
+import Video from 'Components/Video';
+import ImageGallery from 'Components/ImageGallery';
+import MainSection from 'Layout/MainSection';
 // Image Imports
-import dosLogo from "data/images/logo/dos-angler-logo.png";
-import dosVidPreview from "data/images/video/dos-previewImage.jpg";
-import dosVidThumbnail from "data/images/video/dos-previewImage.thumb.png";
-import bfig from "data/images/awards/bfig-2018.png";
-import gameDaily from "data/images/awards/game-daily-2019.png";
-import dreamhack from "data/images/awards/dreamhack-2019.png";
-import pax2019 from "data/images/awards/pax-rising-2019.png";
+import dosLogo from 'data/images/logo/dos-angler-logo.png';
+import dosVidPreview from 'data/images/video/dos-previewImage.jpg';
+import dosVidThumbnail from 'data/images/video/dos-previewImage.thumb.png';
+import bfig from 'data/images/awards/bfig-2018.png';
+import gameDaily from 'data/images/awards/game-daily-2019.png';
+import dreamhack from 'data/images/awards/dreamhack-2019.png';
+import pax2019 from 'data/images/awards/pax-rising-2019.png';
 // Image Data
-import pressKitScreenshots from "data/screenshots/presskit";
-import pressKitLogos from "data/pressKitLogos";
+import pressKitScreenshots from 'data/screenshots/homepage';
+import pressKitLogos from 'data/pressKitLogos';
 
 const PressKit = () => {
   return (
@@ -55,10 +55,9 @@ const PressKit = () => {
                 <dd>BOMB SHELTER GAMES</dd>
                 <dt>Release Date:</dt>
                 <dd>
-                  <p className="noMargin">Steam Early Access</p>
-                  <p>Oct 30, 2020</p>
-                  <p className="noMargin">PC/Switch/Xbox</p>
-                  <p>2022</p>
+                  <p>Nov 2, 2022</p>
+                  <p className="noMargin">Switch/Xbox</p>
+                  <p>2023</p>
                 </dd>
                 <dt>Website:</dt>
                 <dd>Bombsheltergames.com</dd>
@@ -138,12 +137,12 @@ const PressKit = () => {
             <h2>
               <span id="videos">Videos</span>
             </h2>
-            <h4>Early Access Launch Trailer</h4>
+            <h4>Launch Trailer</h4>
             <Video
-              id="mTAg5vLwPsU"
+              id="Un2Fkvfi7_k"
               previewImage={dosVidPreview}
               placeholderImage={dosVidThumbnail}
-              title="Depths of Sanity - Early Access Launch Trailer"
+              title="Depths of Sanity - PC Launch Trailer Nov 2, 2022 - Underwater Metroidvania"
               autoplay
             />
           </div>
@@ -216,23 +215,23 @@ const PressKit = () => {
               <span id="links">Links</span>
             </h2>
             <p>
-              Website:{" "}
+              Website:{' '}
               <a href="https://depthsofsanity.com">
                 https://depthsofsanity.com
               </a>
             </p>
             <p>
-              Trailer:{" "}
+              Trailer:{' '}
               <a href="https://www.youtube.com/watch?v=BmAGlLSxHDE">
                 https://www.youtube.com/watch?v=BmAGlLSxHDE
               </a>
             </p>
             <p>
-              Twitter:{" "}
+              Twitter:{' '}
               <a href="https://twitter.com/Bomb_Shelter">@Bomb_Shelter</a>
             </p>
             <p>
-              Instagram:{" "}
+              Instagram:{' '}
               <a href="https://www.instagram.com/bomb.shelter.games/">
                 Bomb.Shelter.Games
               </a>

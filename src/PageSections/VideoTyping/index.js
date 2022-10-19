@@ -1,22 +1,22 @@
 // Framework Imports
-import React, { Component } from "react";
-import InViewMonitor from "react-inview-monitor";
+import React, { Component } from 'react';
+import InViewMonitor from 'react-inview-monitor';
 // Style Imports
-import "./videoTyping.css";
+import './videoTyping.css';
 // Component Imports
-import MainSection from "Layout/MainSection";
-import MainContent from "Layout/MainContent";
-import Video from "Components/Video";
-import TypedContent from "Components/TypedContent";
+import MainSection from 'Layout/MainSection';
+import MainContent from 'Layout/MainContent';
+import Video from 'Components/Video';
+import TypedContent from 'Components/TypedContent';
 // Image Imports
-import dosVidPreview from "data/images/video/dos-previewImage.jpg";
-import dosVidThumbnail from "data/images/video/dos-previewImage.thumb.png";
+import dosVidPreview from 'data/images/video/dos-trailer.png';
+import dosVidThumbnail from 'data/images/video/dos-trailer.thumb.jpg';
 
 // Define text here
-const firstIntroParagraph = "The first ship went missing.";
+const firstIntroParagraph = 'The first ship went missing.';
 const secondIntroParagraph = "Now it's your turn.";
 const thirdIntroParagraph =
-  "When The Baroness submarine goes dark while investigating a massive vibration deep in the ocean, Abe Douglas, the commander who assembled its crew, makes it his responsibility to find out what happened.";
+  'When The Baroness submarine goes dark while investigating a massive vibration deep in the ocean, Abe Douglas, the commander who assembled its crew, makes it his responsibility to find out what happened.';
 const fourthIntroParagraph =
   "As he plunges into the ocean, he has no idea that what he'll uncover will not only threaten the lives of his crew, but his own sanity.";
 
@@ -64,37 +64,37 @@ class VideoTypingSection extends Component {
     return (
       <MainSection id="trailer" fadeBg bottomDivider>
         <Video
-          id="mTAg5vLwPsU"
+          id="Un2Fkvfi7_k"
           previewImage={dosVidPreview}
           placeholderImage={dosVidThumbnail}
-          title="Depths of Sanity - Early Access Launch Trailer"
+          title="Depths of Sanity - PC Launch Trailer Nov 2, 2022 - Underwater Metroidvania"
           autoplay
         />
         <MainContent retroFont>
           <InViewMonitor onInView={this.startTyping}>
             <p
               className={`VideoTyping-introText ${
-                endFourthParagraph ? "" : "u-hidden"
+                endFourthParagraph ? '' : 'u-hidden'
               }`}
             >
               {firstIntroParagraph}
             </p>
             <p
               className={`VideoTyping-introText ${
-                endFourthParagraph ? "" : "u-hidden"
+                endFourthParagraph ? '' : 'u-hidden'
               }`}
             >
               {secondIntroParagraph}
             </p>
             <p
               className={`VideoTyping-introText ${
-                endFourthParagraph ? "" : "u-hidden"
+                endFourthParagraph ? '' : 'u-hidden'
               }`}
             >
               {thirdIntroParagraph}
             </p>
             <p
-              className={`TypedContent ${endFourthParagraph ? "" : "u-hidden"}`}
+              className={`TypedContent ${endFourthParagraph ? '' : 'u-hidden'}`}
             >
               {fourthIntroParagraph}
             </p>

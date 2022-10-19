@@ -1,17 +1,14 @@
 // Screenshot Gallery Info
 // todo - hide image info until hover; see notes
-import pressKit01 from "../images/screenshots/presskit/01.jpg";
-import pressKit02 from "../images/screenshots/presskit/02.png";
-import pressKit03 from "../images/screenshots/presskit/03.png";
-import pressKit04 from "../images/screenshots/presskit/04.png";
-import pressKit05 from "../images/screenshots/presskit/05.png";
-import pressKit06 from "../images/screenshots/presskit/07.png";
-import screenshot01 from "../images/screenshots/homepage/01.jpg";
-import screenshot02 from "../images/screenshots/homepage/02.jpg";
-import screenshot03 from "../images/screenshots/homepage/03.jpg";
-import screenshot04 from "../images/screenshots/homepage/04.jpg";
-import screenshot05 from "../images/screenshots/homepage/05.jpg";
-import screenshot06 from "../images/screenshots/homepage/06.jpg";
+import screenshot01 from '../images/screenshots/homepage/01.png';
+import screenshot02 from '../images/screenshots/homepage/02.png';
+import screenshot03 from '../images/screenshots/homepage/03.png';
+import screenshot04 from '../images/screenshots/homepage/04.png';
+import screenshot05 from '../images/screenshots/homepage/05.png';
+import screenshot06 from '../images/screenshots/homepage/06.png';
+import screenshot07 from '../images/screenshots/homepage/07.png';
+import screenshot08 from '../images/screenshots/homepage/08.jpg';
+import screenshot09 from '../images/screenshots/homepage/09.jpg';
 
 // Gallery also supports "title" and "description" attributes - text strings only. Example:
 /*
@@ -23,30 +20,6 @@ import screenshot06 from "../images/screenshots/homepage/06.jpg";
   }
 */
 const screenshots = [
-  {
-    thumbnail: pressKit01,
-    src: pressKit01,
-  },
-  {
-    thumbnail: pressKit02,
-    src: pressKit02,
-  },
-  {
-    thumbnail: pressKit03,
-    src: pressKit03,
-  },
-  {
-    thumbnail: pressKit04,
-    src: pressKit04,
-  },
-  {
-    thumbnail: pressKit05,
-    src: pressKit05,
-  },
-  {
-    thumbnail: pressKit06,
-    src: pressKit06,
-  },
   {
     thumbnail: screenshot01,
     src: screenshot01,
@@ -70,6 +43,18 @@ const screenshots = [
   {
     thumbnail: screenshot06,
     src: screenshot06,
+  },
+  {
+    thumbnail: screenshot07,
+    src: screenshot07,
+  },
+  {
+    thumbnail: screenshot08,
+    src: screenshot08,
+  },
+  {
+    thumbnail: screenshot09,
+    src: screenshot09,
   },
 ];
 
