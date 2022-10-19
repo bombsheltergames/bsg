@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d873046c8c063a0c4c51d3187e847138",
+    "revision": "62aff811b109f0ea9a1eb8bf08de967a",
     "url": "/index.html"
   },
   {
-    "revision": "722bd57662ed60aec766",
+    "revision": "a18d56a6e07c293344a7",
     "url": "/static/css/main.e8ede563.chunk.css"
   },
   {
-    "revision": "15e60b1ad998ec84a8db",
-    "url": "/static/js/2.3e1e0b03.chunk.js"
+    "revision": "16d2839e2114d8fb58f8",
+    "url": "/static/js/2.867b4c4f.chunk.js"
   },
   {
     "revision": "4774413aa251b9ee7b821731dc1f2fa7",
-    "url": "/static/js/2.3e1e0b03.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.867b4c4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "722bd57662ed60aec766",
-    "url": "/static/js/main.b1670dac.chunk.js"
+    "revision": "a18d56a6e07c293344a7",
+    "url": "/static/js/main.264fea7f.chunk.js"
   },
   {
     "revision": "967b134b9413d18d9c95",
@@ -66,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e384aa6e78c9df3876aff9f3ba39db07",
     "url": "/static/media/dos-angler-logo.e384aa6e.png"
-  },
-  {
-    "revision": "5ec05d3aac2349a4fd4bc4d573fbe4f5",
-    "url": "/static/media/dos-previewImage.5ec05d3a.jpg"
   },
   {
     "revision": "dacd9da3e80ae4e76dcf60de1f3fac27",
