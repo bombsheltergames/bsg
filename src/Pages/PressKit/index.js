@@ -247,7 +247,7 @@ const PressKit = () => {
             </h2>
             <p>Bennett Tyler: Art</p>
             <p>James Salvati: Programmer and Quality Assurance</p>
-            <p>Dustin Bates: Designer and Programmer</p>
+            <p>Owen Leach: Designer and Programmer</p>
             <p>Nick Masercola: Writer</p>
             <p>Kevin Kozik: Composer</p>
           </div>
