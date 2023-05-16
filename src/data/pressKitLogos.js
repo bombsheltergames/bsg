@@ -1,7 +1,8 @@
 // Screenshot Gallery Info
 // todo - hide image info until hover; see notes
-import dosAngler from "./images/logo/dos-angler-logo.png";
-import dosTentacles from "./images/logo/dos-tentacles-2020.png";
+import dosLogoFull from './images/logo/depths-keyart-logo.png';
+import dosSub from './images/logo/dos-keyart.png';
+import dosLogo from './images/logo/dos-logo-dark.png';
 
 // Gallery also supports "title" and "description" attributes - text strings only. Example:
 /*
@@ -14,12 +15,16 @@ import dosTentacles from "./images/logo/dos-tentacles-2020.png";
 */
 const pressKitLogos = [
   {
-    thumbnail: dosAngler,
-    src: dosAngler,
+    thumbnail: dosLogoFull,
+    src: dosLogoFull,
   },
   {
-    thumbnail: dosTentacles,
-    src: dosTentacles,
+    thumbnail: dosSub,
+    src: dosSub,
+  },
+  {
+    thumbnail: dosLogo,
+    src: dosLogo,
   },
 ];
 

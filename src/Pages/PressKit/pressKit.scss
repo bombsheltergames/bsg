@@ -1,5 +1,5 @@
 // Must include global vars in all files
-@import "styles/global/vars";
+@import 'styles/global/vars';
 
 // Component styles below
 .PressKit {
@@ -15,18 +15,14 @@
   .MainSection {
     &::before,
     &::after {
-      content: "";
+      content: '';
       display: block;
       clear: both;
     }
   }
   &-hero {
-    background: $color--black;
-    margin: $spacing--1000 $spacing--1000 0;
+    margin: $spacing--1000 0 0;
     text-align: center;
-    img {
-      max-height: $bp--300;
-    }
     @media screen and (min-width: $bp--1500) {
       margin: $spacing--1500 0 0;
       width: 100%;
