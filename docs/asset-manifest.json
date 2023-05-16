@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8ede563.chunk.css",
-    "main.js": "/static/js/main.985479dd.chunk.js",
-    "main.js.map": "/static/js/main.985479dd.chunk.js.map",
+    "main.css": "/static/css/main.fe875083.chunk.css",
+    "main.js": "/static/js/main.e38f9354.chunk.js",
+    "main.js.map": "/static/js/main.e38f9354.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.71eeb3b7.js",
     "runtime-main.js.map": "/static/js/runtime-main.71eeb3b7.js.map",
-    "static/js/2.867b4c4f.chunk.js": "/static/js/2.867b4c4f.chunk.js",
-    "static/js/2.867b4c4f.chunk.js.map": "/static/js/2.867b4c4f.chunk.js.map",
+    "static/js/2.a7bfa1a1.chunk.js": "/static/js/2.a7bfa1a1.chunk.js",
+    "static/js/2.a7bfa1a1.chunk.js.map": "/static/js/2.a7bfa1a1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.da774e6202cf92146433f79690f28ec4.js": "/precache-manifest.da774e6202cf92146433f79690f28ec4.js",
+    "precache-manifest.0359ff7f2fae1e859079a6b72e7093f9.js": "/precache-manifest.0359ff7f2fae1e859079a6b72e7093f9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e8ede563.chunk.css.map": "/static/css/main.e8ede563.chunk.css.map",
-    "static/js/2.867b4c4f.chunk.js.LICENSE.txt": "/static/js/2.867b4c4f.chunk.js.LICENSE.txt",
+    "static/css/main.fe875083.chunk.css.map": "/static/css/main.fe875083.chunk.css.map",
+    "static/js/2.a7bfa1a1.chunk.js.LICENSE.txt": "/static/js/2.a7bfa1a1.chunk.js.LICENSE.txt",
     "static/media/01.png": "/static/media/01.4ef75ac3.png",
     "static/media/02.png": "/static/media/02.3c50084e.png",
     "static/media/03.png": "/static/media/03.ba1bb014.png",
@@ -22,8 +22,10 @@
     "static/media/08.jpg": "/static/media/08.d129fcf6.jpg",
     "static/media/09.jpg": "/static/media/09.3987997c.jpg",
     "static/media/bfig-2018.png": "/static/media/bfig-2018.5f849dff.png",
+    "static/media/depths-keyart-logo.png": "/static/media/depths-keyart-logo.46ccec27.png",
     "static/media/dos-angler-logo.png": "/static/media/dos-angler-logo.e384aa6e.png",
-    "static/media/dos-tentacles-2020.png": "/static/media/dos-tentacles-2020.dacd9da3.png",
+    "static/media/dos-keyart.png": "/static/media/dos-keyart.8d3af414.png",
+    "static/media/dos-logo-dark.png": "/static/media/dos-logo-dark.903c1980.png",
     "static/media/dos-trailer.png": "/static/media/dos-trailer.1a9860cc.png",
     "static/media/dreamhack-2019.png": "/static/media/dreamhack-2019.6bc3d1d4.png",
     "static/media/game-daily-2019.png": "/static/media/game-daily-2019.57a80cf7.png",
@@ -35,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.71eeb3b7.js",
-    "static/js/2.867b4c4f.chunk.js",
-    "static/css/main.e8ede563.chunk.css",
-    "static/js/main.985479dd.chunk.js"
+    "static/js/2.a7bfa1a1.chunk.js",
+    "static/css/main.fe875083.chunk.css",
+    "static/js/main.e38f9354.chunk.js"
   ]
 }
