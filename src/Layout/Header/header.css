@@ -6,14 +6,22 @@
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2; }
-  @media screen and (min-width: 768px) {
-    .Header {
-      padding: 1rem; } }
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .Header {
+    padding: 1rem;
+  }
+}
+.Header-logoWrap {
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
   .Header-logoWrap {
-    width: 90%;
-    max-width: 350px;
-    margin: auto; }
-    @media screen and (min-width: 768px) {
-      .Header-logoWrap {
-        max-width: 650px; } }
+    max-width: 650px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

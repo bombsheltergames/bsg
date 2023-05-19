@@ -4,11 +4,17 @@
   top: 43px;
   background: #011226;
   padding: 0.25rem 1.5rem;
-  font-size: 0.8rem; }
-  @media screen and (min-width: 768px) {
-    .Breadcrumb {
-      top: 82px; } }
-  .Breadcrumb .MainContent {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .Breadcrumb {
+    top: 82px;
+  }
+}
+.Breadcrumb .MainContent {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=breadcrumb.css.map */

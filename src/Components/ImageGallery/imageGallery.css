@@ -1,4 +1,7 @@
 .ImageGallery {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=imageGallery.css.map */

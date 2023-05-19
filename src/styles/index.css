@@ -5,21 +5,26 @@
   top: auto;
   width: 1px;
   height: 1px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .u-retroFont {
-  font-family: "Press Start 2P", cursive; }
+  font-family: "Press Start 2P", cursive;
+}
 
 .u-hidden {
-  opacity: 0; }
+  opacity: 0;
+}
 
 .u-fadeIn {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .u-clearFix::after, .u-clearFix::before {
   clear: both;
   content: "";
-  display: block; }
+  display: block;
+}
 
 html,
 body,
@@ -111,7 +116,8 @@ button {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article,
 aside,
@@ -124,49 +130,60 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 a {
   color: #4396ea;
-  text-decoration: none; }
-  a:hover {
-    color: #7cb6f0;
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  color: #7cb6f0;
+  text-decoration: underline;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 strong,
 b {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 i,
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 *,
 *:after,
 *:before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -174,28 +191,37 @@ body {
   font-family: "Play", sans-serif;
   background: #01264f;
   color: white;
-  line-height: 1.44; }
+  line-height: 1.44;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 button {
   cursor: pointer;
   background: 0;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 h1 {
   font-size: 1.8em;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
   font-size: 1.8em;
-  text-align: center; }
+  text-align: center;
+}
 
 h3 {
   font-size: 1.5rem;
-  text-align: center; }
+  text-align: center;
+}
 
 h4 {
   font-size: 1.2rem;
-  text-align: center; }
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

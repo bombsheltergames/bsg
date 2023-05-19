@@ -7,58 +7,77 @@
   bottom: 0;
   display: flex;
   z-index: 10;
-  animation: fadeBg 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-  @media screen and (min-width: 650px) {
-    .Modal {
-      padding: 2rem; } }
-  .Modal-inner {
-    position: relative;
-    margin: auto;
-    animation: modalPop 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-  .Modal-close {
-    position: fixed;
-    top: 0;
-    right: 0;
-    color: white;
-    text-transform: uppercase;
-    padding: 0.25rem;
-    transition: background-color 0.3s, color 0.3s; }
-    .Modal-close:hover {
-      background-color: rgba(255, 255, 255, 0.7);
-      color: black; }
-  @media screen and (min-width: 650px) {
-    .Modal--image .Modal-inner {
-      max-height: 80vh;
-      max-width: 80vw; } }
-  .Modal--image .Modal-inner-description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1rem 2rem; }
-    .Modal--image .Modal-inner-description h3 + p {
-      margin-top: 0.5rem; }
-  .Modal--image .Modal-inner .Image {
+  animation: fadeBg 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@media screen and (min-width: 650px) {
+  .Modal {
+    padding: 2rem;
+  }
+}
+.Modal-inner {
+  position: relative;
+  margin: auto;
+  animation: modalPop 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.Modal-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+@media screen and (min-width: 650px) {
+  .Modal--image .Modal-inner {
     max-height: 80vh;
-    max-width: 100%;
-    width: auto; }
-  .Modal--content .Modal-inner {
-    overflow: auto;
-    background: white;
-    max-width: 768px;
-    border-radius: 1rem;
-    padding: 1rem; }
+    max-width: 80vw;
+  }
+}
+.Modal--image .Modal-inner-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem 2rem;
+}
+.Modal--image .Modal-inner-description h3 + p {
+  margin-top: 0.5rem;
+}
+.Modal--image .Modal-inner .Image {
+  max-height: 80vh;
+  max-width: 100%;
+  width: auto;
+}
+.Modal--content .Modal-inner {
+  overflow: auto;
+  background: white;
+  max-width: 768px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
 @keyframes fadeBg {
   0% {
-    background: 0; }
+    background: 0;
+  }
   100% {
-    background: rgba(0, 0, 0, 0.8); } }
-
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
 @keyframes modalPop {
   0% {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   100% {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */

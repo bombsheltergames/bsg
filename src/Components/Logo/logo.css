@@ -3,24 +3,36 @@
   display: block;
   color: white;
   fill: currentColor;
-  transition: color 0.5s, fill 0.5s; }
-  .Logo-bomb-warning {
-    transform-origin: 9.9057% 50%; }
-  .Logo--spin, .Logo:hover, .Logo:focus, .Logo:active {
-    color: #ffc000; }
-    .Logo--spin .Logo-bomb-warning, .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
-      animation: spin 1.5s infinite linear; }
+  transition: color 0.5s, fill 0.5s;
+}
+.Logo-bomb-warning {
+  transform-origin: 9.9057% 50%;
+}
+.Logo--spin, .Logo:hover, .Logo:focus, .Logo:active {
+  color: #ffc000;
+}
+.Logo--spin .Logo-bomb-warning, .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
+  animation: spin 1.5s infinite linear;
+}
 
 @keyframes spin {
   0% {
-    transform: rotate(0); }
+    transform: rotate(0);
+  }
   100% {
-    transform: rotate(360deg); } }
-
+    transform: rotate(360deg);
+  }
+}
 @keyframes colorFade {
   0% {
-    color: #ffc000; }
+    color: #ffc000;
+  }
   50% {
-    color: #ca1c05; }
+    color: #ca1c05;
+  }
   100% {
-    color: #ffc000; } }
+    color: #ffc000;
+  }
+}
+
+/*# sourceMappingURL=logo.css.map */

@@ -1,19 +1,30 @@
 .MainContent {
   margin: 1rem auto;
   max-width: 768px;
-  position: relative; }
-  .MainContent--noMargin {
-    margin: 0 auto; }
+  position: relative;
+}
+.MainContent--noMargin {
+  margin: 0 auto;
+}
+.MainContent.u-retroFont {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 480px) {
   .MainContent.u-retroFont {
-    font-size: 0.8rem; }
-    @media screen and (min-width: 480px) {
-      .MainContent.u-retroFont {
-        font-size: 0.9rem; } }
-    .MainContent.u-retroFont .MainSection-heading {
-      margin: 2rem 0 1.5rem;
-      font-size: 1.2rem; }
-      @media screen and (min-width: 480px) {
-        .MainContent.u-retroFont .MainSection-heading {
-          font-size: 1.5rem; } }
-  .MainContent li {
-    margin: 0.5rem 0; }
+    font-size: 0.9rem;
+  }
+}
+.MainContent.u-retroFont .MainSection-heading {
+  margin: 2rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 480px) {
+  .MainContent.u-retroFont .MainSection-heading {
+    font-size: 1.5rem;
+  }
+}
+.MainContent li {
+  margin: 0.5rem 0;
+}
+
+/*# sourceMappingURL=mainContent.css.map */

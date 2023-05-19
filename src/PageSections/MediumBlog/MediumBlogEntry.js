@@ -2,16 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { Link } from 'react-router-dom';
 // Component Imports
 import Button from 'Components/Button';
 import Tag from 'Components/Tag';
 // Style Imports
 import './mediumBlogEntry.css';
 
-const MediumBlogEntry = props => {
+const MediumBlogEntry = ({ clipPosts, post, showTags }) => {
   const [clipped, setClipped] = useState(false);
-  const { clipPosts, post, showTags } = props;
 
   useEffect(() => {
     if (!clipped && clipPosts) {
@@ -37,7 +35,9 @@ const MediumBlogEntry = props => {
     <div className="MediumBlogEntry">
       <div className="MediumBlogEntry-titleBar">
         <h3>
-          <Link to={post.link}>{post.title}</Link>
+          <a href={post.link} target="_blank">
+            {post.title}
+          </a>
         </h3>
         <p className="MediumBlogEntry-author">
           <span>{post.author}</span>
