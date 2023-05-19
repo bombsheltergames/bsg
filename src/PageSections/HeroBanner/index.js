@@ -4,11 +4,7 @@ import Button from 'Components/Button';
 import Image from 'Components/Image';
 import dosLogo from 'data/images/logo/dos-angler-logo.png';
 
-const TopSection = () => {
-  const today = new Date().toISOString();
-  const launch = new Date('Nov 2 2022').toISOString();
-  const isLaunched = today >= launch;
-
+const HeroBanner = () => {
   return (
     <Hero fullscreen>
       <h1 className="u-accessibleText">Depths of Sanity</h1>
@@ -18,10 +14,10 @@ const TopSection = () => {
           type="ghost-white"
           size="large"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           href="https://store.steampowered.com/app/848080/Depths_of_Sanity/"
         >
-          {isLaunched ? 'Buy on Steam' : 'Launching Nov 2nd'}
+          Buy on Steam
         </Button>
       </p>
       <p>
@@ -33,4 +29,4 @@ const TopSection = () => {
   );
 };
 
-export default TopSection;
+export default HeroBanner;

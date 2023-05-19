@@ -1,8 +1,8 @@
 // Framework Imports
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // Style Imports
-import "./image.css";
+import './image.css';
 
 const IMAGE_FADE_IN_CLASS = `isLoaded`;
 
@@ -60,9 +60,9 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
-  placeholder: "",
-  alt: "",
-  cssClasses: "",
+  placeholder: '',
+  alt: '',
+  cssClasses: '',
 };
 
 export default Image;

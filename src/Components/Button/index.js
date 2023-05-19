@@ -1,22 +1,35 @@
 // Framework Imports
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 // Style Imports
-import "./button.css";
+import './button.css';
 
 const Button = props => {
   const { href, onClick, size, type, children, ...rest } = props;
-  const ButtonEl = href ? "a" : "button";
-  return (
-    <ButtonEl
-      onClick={onClick}
-      href={href}
-      className={`Button Button-size--${size} Button-color--${type}`}
-      {...rest}
-    >
-      {children}
-    </ButtonEl>
-  );
+  if (href && href.startsWith('/')) {
+    return (
+      <Link
+        to={href}
+        className={`Button Button-size--${size} Button-color--${type}`}
+        {...rest}
+      >
+        {children}
+      </Link>
+    );
+  } else {
+    const ButtonEl = href ? 'a' : 'button';
+    return (
+      <ButtonEl
+        onClick={onClick}
+        href={href}
+        className={`Button Button-size--${size} Button-color--${type}`}
+        {...rest}
+      >
+        {children}
+      </ButtonEl>
+    );
+  }
 };
 
 Button.propTypes = {
@@ -30,8 +43,8 @@ Button.propTypes = {
 Button.defaultProps = {
   href: null,
   onClick: () => {},
-  size: "medium",
-  type: "primary",
+  size: 'medium',
+  type: 'primary',
   children: undefined,
 };
 

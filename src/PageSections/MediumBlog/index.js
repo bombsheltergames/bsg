@@ -37,7 +37,7 @@ const MediumBlog = props => {
         ))}
       </div>
       <div className="MediumBlog-viewAll">
-        <a href="https://bsheltergButtonmes.medium.com/">
+        <a href="https://bsheltergames.medium.com/">
           View All Blog Posts on Medium
         </a>
       </div>
