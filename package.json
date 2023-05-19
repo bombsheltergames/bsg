@@ -28,7 +28,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --branch master --dest docs",
+    "deploy": "gh-pages -d build --branch main --dest docs",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "dev": "npm-run-all -p watch-css start-js",
