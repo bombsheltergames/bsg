@@ -1,0 +1,63 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+.BackToTop {
+  // Positioning
+  &-wrap {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    // Move positioning for larger screen sizes
+    @media screen and (min-width: $bp--1500) {
+      bottom: 70px;
+      right: 50px;
+    }
+    z-index: 9; // Above pretty much everything, just not modals
+  }
+  // Font decoration
+  color: $color--white;
+  font-size: $font-size--2000;
+  font-weight: bold;
+  line-height: 35px;
+  // Size, shape, color
+  background-color: lighten($color--black, $tint--2000);
+  border: 1px solid lighten($color--black, $tint--2000);
+  border-radius: $radius--500;
+  height: 40px;
+  padding: $spacing--250;
+  width: 40px;
+  // Animation & Transition Effects
+  transition: background-color 0.3s, border-color 0.3s, opacity 0.7s;
+  animation-name: fadeIn;
+  animation-duration: 0.7s;
+  // Adjust for hover/active/focus states
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: rgba($color--white, 0.5);
+    background-color: darken($color--primary, $tint--2000);
+  }
+  // Position & size the diver gif
+  &-image {
+    position: absolute;
+    top: 5px;
+    right: -27px;
+    height: 30px;
+  }
+  &.fadeIn {
+    opacity: 1;
+  }
+  &.fadeOut {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

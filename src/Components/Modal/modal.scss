@@ -1,0 +1,96 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+.Modal {
+  // Global modal styles
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 10; // Above everything, including Back to Top
+  animation: fadeBg 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  @media screen and (min-width: $bp--1000) {
+    padding: $spacing--2000;
+  }
+  &-inner {
+    position: relative;
+    margin: auto;
+    animation: modalPop 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  &-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: $color--white;
+    text-transform: uppercase;
+    padding: $spacing--250;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: $color--black;
+    }
+  }
+  // Variations
+  // Image modal - no background
+  &--image {
+    .Modal {
+      &-inner {
+        @media screen and (min-width: $bp--1000) {
+          max-height: 80vh;
+          max-width: 80vw;
+        }
+        &-description {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.8);
+          color: $color--white;
+          padding: $spacing--1000 $spacing--2000;
+          h3 + p {
+            margin-top: $spacing--500;
+          }
+        }
+        .Image {
+          max-height: 80vh;
+          max-width: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+  // Standard content modal - has background and border radius
+  &--content {
+    .Modal {
+      &-inner {
+        overflow: auto;
+        background: $color--white;
+        max-width: $bp--1500;
+        border-radius: $radius--1000;
+        padding: $spacing--1000;
+      }
+    }
+  }
+}
+
+@keyframes fadeBg {
+  0% {
+    background: 0;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes modalPop {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

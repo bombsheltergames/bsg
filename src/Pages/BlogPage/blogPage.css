@@ -1,0 +1,13 @@
+body,
+html,
+#main-root {
+  height: 100%;
+  min-height: 100%; }
+
+.BlogPage {
+  position: relative; }
+  .BlogPage .MainSection:first-child {
+    padding-top: 0.25rem; }
+    @media screen and (min-width: 650px) {
+      .BlogPage .MainSection:first-child {
+        padding-top: 1rem; } }

@@ -1,0 +1,48 @@
+.Hero {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw; }
+  .Hero-content {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+      .Hero-content {
+        max-height: 100%; } }
+    .Hero-content .Image,
+    .Hero-content .Image-wrap {
+      display: block;
+      margin: auto;
+      max-width: 500px;
+      width: 100%; }
+      @media screen and (max-width: 768px) and (orientation: landscape) {
+        .Hero-content .Image,
+        .Hero-content .Image-wrap {
+          max-width: 40vw;
+          max-height: 40vh; } }
+    .Hero-content .Button {
+      margin: 0 auto 1rem; }
+      @media screen and (max-width: 768px) {
+        .Hero-content .Button {
+          display: block;
+          max-width: 320px; } }
+  .Hero--fullscreen {
+    height: calc(100vh - 41px); }
+    @media screen and (min-width: 768px) {
+      .Hero--fullscreen {
+        height: calc(100vh - 70px); } }
+    .Hero--fullscreen > .Image-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .Hero--fullscreen > .Image-wrap .Image {
+        height: 100%;
+        object-fit: cover; }

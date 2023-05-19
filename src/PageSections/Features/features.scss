@@ -1,0 +1,27 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+.Features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  li {
+    text-align: center;
+    width: 80%;
+    margin-bottom: $spacing--1000;
+    @media screen and (min-width: $bp--1500) {
+      width: 45%;
+      &:nth-child(-n + 2) h4 {
+        height: 4rem;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+  h4 {
+    font-size: $font-size--800;
+    margin-bottom: $spacing--500;
+  }
+}

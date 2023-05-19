@@ -1,0 +1,9 @@
+@import "styles/global/vars";
+
+.ContactInfo {
+  margin-top: $spacing--2000;
+  text-align: center;
+  p {
+    margin: $spacing--1000;
+  }
+}

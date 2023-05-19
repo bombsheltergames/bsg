@@ -1,0 +1,19 @@
+// Must include global vars in all files
+@import "styles/global/vars";
+
+// Component styles below
+body,
+html,
+#main-root {
+  height: 100%;
+  min-height: 100%;
+}
+.BlogPage {
+  position: relative;
+  .MainSection:first-child {
+    padding-top: $spacing--250;
+    @media screen and (min-width: $bp--1000) {
+      padding-top: $spacing--1000;
+    }
+  }
+}
